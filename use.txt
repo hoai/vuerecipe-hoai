@@ -1,0 +1,1000 @@
+  141  git push
+  142  cd /home/www/subtitlevideo.com/
+  143  git status
+  144  php -l upload_video.php
+  145  git add -A
+  146  git commit -m 'fix upload';
+  147  git push
+  148  cd /home/www/subtitlevideo.com/
+  149  git status
+  150  php -l base.php 
+  151  git add -A
+  152  git commit -m 'fix bug';
+  153  git push
+  154  cd /home/www/subtitlevideo.com/
+  155  git status
+  156  git add -A
+  157  git commit -m 'fix js';
+  158  php -l upload_video.php
+  159  ls -la logs/
+  160  cp logs/.htaccess files/
+  161  git add -A
+  162  git commit -m 'add disable';
+  163  git push
+  164  git add -A
+  165  git commit -m 'fix cloud';
+  166  git push
+  167  git status
+  168  php -l download_file.php
+  169  git add -A
+  170  git commit -m 'fix download';
+  171  git push
+  172  git status
+  173  php -l paypal.php 
+  174  php -l index
+  175  php -l index.php 
+  176  ls
+  177  mysqldump -uroot -p12345,rabbit subtitlevideo_com  > subtitlevideo_com.sql;
+  178  chmod 000 subtitlevideo_com.sql
+  179  git add -A
+  180  git commit -m 'fix paypal';
+  181  git push
+  182  git add -A
+  183  git commit -m 'fix index';
+  184  git push
+  185  git status
+  186  cd /home/www/subtitlevideo.com/
+  187  php -l upload_video.php 
+  188  rm upload_video_*.log
+  189  sudo rm upload_video_*.log
+  190  ls
+  191  git status
+  192  php -l upload_video.php
+  193  git status
+  194  git add -A
+  195  git commit -m 'fix duration';
+  196  git push
+  197  git status
+  198  htop
+  199  git status
+  200  git add -A
+  201  git commit -m 'fix bug';
+  202  git push
+  203  git add -A
+  204  git commit -m 'fix name';
+  205  git púh
+  206  git oush
+  207  git push
+  208  git add -A
+  209  git commit -m 'fix home';
+  210  git push
+  211  git add -A
+  212  git commit -m 'fix home';
+  213  git push
+  214  git add -A
+  215  git commit -m 'fix lock';
+  216  git push
+  217  git add -A
+  218  git commit -m 'fix lock';
+  219  git push
+  220  git commit -m 'fix lock';
+  221  git add -A
+  222  git commit -m 'fix lock';
+  223  git push
+  224  cd /home/www/subtitlevideo.com/
+  225  git status
+  226  php -l base.php
+  227  php -l index.php
+  228  php -l paypal.php
+  229  git add -A
+  230  git commit -m 'fix bug';
+  231  git push
+  232  cd /home/www/subtitlevideo.com/
+  233  git status
+  234  php -l sites/ripsave.php 
+  235  git add -A
+  236  git commit -m 'add ripsave';
+  237  git push
+  238  php  create mode 100644 sites/ripsave.php
+  239  php sites/ripsave.php
+  240  git status
+  241  php -l download_file.php
+  242  git add -A
+  243  git commit -m 'fix download';
+  244  git push
+  245  git status
+  246  php -l upload_video.php 
+  247  tail -f /var/log/httpd/subtitlevideo.com-error_log
+  248  git add -A
+  249  git commit -m 'fix save';
+  250  git push
+  251  git add -A
+  252  git commit -m 'fix site';
+  253  git push
+  254  cd /home/www/subtitlevideo.com/
+  255  git status
+  256  php -l sites/okvid_download.php
+  257  php sites/okvid_download.php
+  258  tail -f /var/log/httpd/subtitlevideo.com-error_log
+  259  git status
+  260  git add -A
+  261  git commit -m 'add ok site';
+  262  git push
+  263  php sites/okvid_download.php
+  264  git add -A
+  265  git commit -m 'fix ok.ru'
+  266  git push
+  267  php sites/okvid_download.php
+  268  git add -A
+  269  git commit -m 'fix ok.ru'
+  270  git push
+  271  git status
+  272  php sites/pastedownload.php
+  273  cd /home/www/subtitlevideo.com/
+  274  git status
+  275  git add -A
+  276  git commit -m 'fix image';
+  277  git oush
+  278  git push
+  279  cd /home/www/subtitlevideo.com/
+  280  git status
+  281  git checkout -f
+  282  cd /home/www/
+  283  mkdir hot-m.com
+  284  cd hot-m.com/
+  285  mkdir www
+  286  cd www/
+  287  ls
+  288  git clone https://github.com/hoai/download.laptrinhwebs.com
+  289  ls
+  290  cd ..
+  291  mv www/download.laptrinhwebs.com/ www2
+  292  rm -rf www
+  293  mv www2/ www
+  294  cd www/
+  295  ls
+  296  mysql -uroot -p12345,rabbit hot-a.com < ucloud.sql 
+  297  cd ..
+  298  mv hot-m.com/ hot-a.com
+  299  ls
+  300  ssh-keygen -t rsa -f
+  301  ssh-keygen -t rsa 
+  302  chmod 400 ~/.ssh/ -R\
+  303  chmod 400 ~/.ssh/ -R
+  304  cd /root/.ssh/
+  305  ls
+  306  ls -la /root/.ssh/id_rsa
+  307  cd /root/.ssh/
+  308  ls
+  309  cd authorized_keys 
+  310  ls
+  311  cd ~/.ssh/
+  312  ls
+  313  ssh-keygen -t rsa 
+  314  cat /root/.ssh/id_rsa.pub
+  315  cp /root/.ssh/id_rsa.pub /home/www/
+  316  cp /root/.ssh/id_rsa /home/www/
+  317  cd /home/www/subtitlevideo.com/
+  318  git status
+  319  git add -A
+  320  git commit -m 'fix css';
+  321  git push
+  322  cd /home/www/subtitlevideo.com/
+  323  git status
+  324  git add -A
+  325  git commit -m 'fix response';
+  326  git push
+  327  htop
+  328  cd /home/www/subtitlevideo.com/
+  329  git status
+  330  git add -A
+  331  git commit -m 'fix css';
+  332  git push
+  333  git checkout -f
+  334  cd /home/www/subtitlevideo.com/
+  335  git status
+  336  git add -A
+  337  git commit -m 'fix js';
+  338  git push
+  339  cd /home/www/subtitlevideo.com/
+  340  git status
+  341  git add -A
+  342  git commit -m 'fix index';
+  343  git push
+  344  git status
+  345  htop
+  346  cd /home/www/subtitlevideo.com/
+  347  htop
+  348  cd /home/www/subtitlevideo.com/
+  349  git status
+  350  git add -A
+  351  git commit -m 'fix caption live';
+  352  git push
+  353  ls -la .git/
+  354  chmod -R 100 ./git
+  355  chmod -R 100 .git/
+  356  htop
+  357  cd /home/www/subtitlevideo.com/
+  358  git status
+  359  git add -A
+  360  git commit -m 'fix css';
+  361  git push
+  362  cd /home/www/subtitlevideo.com/
+  363  git status
+  364  git add -A
+  365  git commit -m 'fix index';
+  366  git push
+  367  cd /home/www/subtitlevideo.com/
+  368  git status
+  369  git add -A
+  370  git commit -m 'fix index';
+  371  git push
+  372  git add -A
+  373  git commit -m 'fix index';
+  374  git push
+  375  cd /home/www/subtitlevideo.com/
+  376  git status
+  377  git add -A
+  378  git commit -m 'fix js';
+  379  git push
+  380  vim .htaccess
+  381  git add -A
+  382  git commit -m 'fix https';
+  383  git push
+  384  cd /home/www/
+  385  ls
+  386  mkdir -p chosogia.com/worker
+  387  cd chosogia.com/worker/
+  388  ls
+  389  df -h
+  390  ls
+  391  du -sh ./*
+  392  cd ..
+  393  du -sh ./*
+  394  crontab -e
+  395  htop
+  396  cd /home/www/chosogia.com/worker/
+  397  ls
+  398  wget https://s3-ap-southeast-1.amazonaws.com/hot-m.com/backup/worker_master_26-09-2020-05-30-52.gz
+  399  wget https://s3-ap-southeast-1.amazonaws.com/hot-m.com/backup/worker_user_126-09-2020-05-31-45.gz
+  400  ls
+  401  wget https://s3-ap-southeast-1.amazonaws.com/hot-m.com/backup/worker_site_26-09-2020-05-33-41.gz
+  402  df -h
+  403  ls
+  404  rm worker_master_26-09-2020-05-30-52.gz.1
+  405  gunzip  worker_site_26-09-2020-05-33-41.gz
+  406  ls
+  407  cd ..
+  408  mv worker/ worker_old/
+  409  cd worker_old/
+  410  ls
+  411  mv worker ../
+  412  gunzip worker_master_26-09-2020-05-30-52.gz
+  413  ls
+  414  ls worker_master_26-09-2020-05-30-52 
+  415  gunzip worker_user_126-09-2020-05-31-45.gz
+  416  ls
+  417  cd worker_master_26-09-2020-05-30-52
+  418  user_1ls
+  419  cd worker_master_26-09-2020-05-30-52
+  420  ls
+  421  cd worker_master_26-09-2020-05-30-52 
+  422  ls
+  423  vim worker_master_26-09-2020-05-30-52 
+  424  mysql -uroot -p12345,rabbit master < worker_master_26-09-2020-05-30-52 
+  425  mysql -uroot -p12345,rabbit user_1 < worker_user_126-09-2020-05-31-45 
+  426  cd ..
+  427  rm -rf worker_old/
+  428  cd worker/
+  429  git status
+  430  cd ..
+  431  wget https://s3-ap-southeast-1.amazonaws.com/hot-m.com/backup/worker_site_26-09-2020-05-33-41.gz
+  432  tar -xvf worker_site_26-09-2020-05-33-41.gz
+  433  mv home/www/chosogia.com/worker/* worker/
+  434  sudo mv home/www/chosogia.com/worker/* worker/
+  435  rm -rf worker
+  436  mv home/www/chosogia.com/worker worker/
+  437  rm -rf home/
+  438  rm -rf worker
+  439  tar -xvf worker_site_26-09-2020-05-33-41.gz
+  440  ls
+  441  mv home/www/chosogia.com/worker/ worker
+  442  ls
+  443  rm -rf home/
+  444  rm worker_site_26-09-2020-05-33-41.gz
+  445  vim /etc/httpd/conf/httpd
+  446  vim /etc/httpd/conf/httpd.conf
+  447  service httpd restart
+  448  vim /etc/httpd/conf/httpd.conf
+  449  service httpd restart
+  450  ls -la worker/www/
+  451  cd worker/
+  452  cd www
+  453  pwd
+  454  vim /etc/httpd/conf/httpd.conf
+  455  service httpd restart
+  456  vim /etc/httpd/conf/httpd.conf
+  457  service httpd restart
+  458  cd ..
+  459  wget https://s3-ap-southeast-1.amazonaws.com/hot-m.com/backup/worker_master_26-09-2020-05-30-52.gz
+  460  cat /etc/redhat-release 
+  461  yum remove mariadb mariadb-server
+  462  wget https://dev.mysql.com/get/mysql57-community-release-el7-11.noarch.rpm
+  463  yum localinstall mysql57-community-release-el7-11.noarch.rpm 
+  464  yum repolist enabled | grep "mysql.*-community.*"
+  465  yum install mysql-community-server
+  466  service mysqld start
+  467  service mysqld status
+  468  grep 'temporary password' /var/log/mysqld.log
+  469  vim /var/log/mysqld.log
+  470  mysql_secure_installation
+  471  mysql -uroot -p12345,rabbit
+  472  ls
+  473  gunzip worker_master_26-09-2020-05-30-52.gz
+  474  mysql -uroot -p12345,rabbit master < worker_master_26-09-2020-05-30-52 
+  475  mysql -uroot -p12345,rabbit
+  476  mysql -uroot -p12345,rabbit master < worker_master_26-09-2020-05-30-52 
+  477  mysql_upgrade -u root -p
+  478  mysql -uroot -p12345,rabbit master < worker_master_26-09-2020-05-30-52 
+  479  mysql_upgrade -u root -p12345,rabbit > hoai.txt
+  480  pws
+  481  pwd
+  482  cd /home/www/
+  483  git clone //github.com/hoai/-download.laptrinhwebs.com_2020.git
+  484  git clone http://github.com/hoai/-download.laptrinhwebs.com_2020.git
+  485  ls
+  486  cd -download.laptrinhwebs.com_2020
+  487  ls
+  488  git status
+  489  mv -download.laptrinhwebs.com_2020/ download.laptrinhwebs.com
+  490  mv "-download.laptrinhwebs.com_2020" download.laptrinhwebs.com
+  491  mv "-download.laptrinhwebs.com_2020"d download.laptrinhwebs.com
+  492  cd /home/www/chosogia.com/website/
+  493  ls
+  494  cd ..
+  495  mkdir moxoo.net
+  496  mkdir data_khachhang
+  497  mkdir i30.0rg
+  498  mv i30.0rg/ i30.ỏg
+  499  mv i30.ỏg/ i30.org
+  500  cd /home/www/moxoo.net/
+  501  ls
+  502  mysql -uroot -p12345,rabbit 
+  503  ls -la moxoo_net.sql 
+  504  mysql -uroot -p12345,rabbit moxoo_net < moxoo_net.sql
+  505  vim /etc/httpd/conf/httpd
+  506  vim /etc/httpd/conf/httpd.conf
+  507  service httpd restart
+  508  ls
+  509  ls upload_files/
+  510  vim /etc/httpd/conf/httpd.conf
+  511  service httpd restart
+  512  cd upload_files/
+  513  ls
+  514  cd /home/www/
+  515  ls
+  516  cd letsencrypt/
+  517  ls
+  518  ./letsencrypt-auto -d moxoo.net
+  519  cd ../
+  520  chmod -R 777 data_khachhang/
+  521  mv data_khachhang/ data_khachhang_old/
+  522  cd data_khachhang_old/
+  523  ls
+  524  ls data_khachhang
+  525  cd ..
+  526  mv data_khachhang_old/ data_khachhang/
+  527  cd data_khachhang/data_khachhang
+  528  ls
+  529  cd 1.\ BO\ 1\ -\ CO\ PASS/
+  530  ls
+  531  cd 1.\ BO\ 1/
+  532  ls
+  533  cd /home/www/moxoo.net/
+  534  ls
+  535  vim moxoo_net.sql 
+  536  cd upload_files/
+  537  ls
+  538  ls -la /home/www/data_khachhang/
+  539  tail -f /var/log/httpd/moxoo.net-error_log 
+  540  ls -la /home/www/data_khachhang/data_khachhang_csv/
+  541  ls -la /home/www/data_khachhang/data_khachhang_csv/1.\ BO\ 1\ -\ CO\ PASS/
+  542  htop
+  543  ls -la /home/www/data_khachhang/data_khachhang_csv/10. BO 10 - CO PASS/
+  544  ls -la /home/www/data_khachhang/data_khachhang_csv/10.\ BO\ 10\ -\ CO\ PASS/
+  545  tail -f /var/log/httpd/moxoo.net-error_log 
+  546  cd /home/www/
+  547  git clone https://github.com/hoai/puppeteer-screen-capture-audio
+  548  htop
+  549  df -h
+  550  aws
+  551  cd /home/www/
+  552  git clone https://github.com/aws-samples/aws-mobile-appsync-chat-starter-angular.git
+  553  cd aws-mobile-appsync-chat-starter-angular
+  554  node -v
+  555  curl -sL https://rpm.nodesource.com/setup_12.x | bash -
+  556  ls -la /etc/yum.repos.d/|grep nodesource
+  557  sudo yum remove -y nodejs npm
+  558  sudo yum list available nodejs
+  559  curl -sL https://rpm.nodesource.com/setup_12.x | bash -
+  560  rpm -qa 'node|npm' | grep -v nodesource
+  561   yum install nodejs
+  562  cat /etc/redhat-release 
+  563  sudo yum -y update
+  564  df -h
+  565  curl -sL https://rpm.nodesource.com/setup_12.x | sudo bash -
+  566  rpm -qa 'node|npm' | grep -v nodesource
+  567  rpm -i --nosignature --force '/tmp/tmp.ip7Q72FYCv'
+  568  curl -sL -o '/tmp/tmp.ip7Q72FYCv' 'https://rpm.nodesource.com/pub_12.x/el/7/x86_64/nodesource-release-el7-1.noarch.rpm'
+  569  rpm -i --nosignature --force '/tmp/tmp.ip7Q72FYCv'
+  570  rpm -qa 'node|npm' | grep -v nodesource
+  571  sudo yum clean all && sudo yum makecache fast
+  572  sudo yum install -y gcc-c++ make
+  573  sudo yum install -y nodejs
+  574  node -v
+  575  sudo yum remove  nodejs
+  576  curl -sL https://rpm.nodesource.com/setup_12.x | sudo bash -
+  577   rpm -qa 'node|npm' 
+  578  yum install nodejs
+  579  which npm
+  580  sudo yum remove -y nodejs npm
+  581  ls -la /etc/yum.repos.d/|grep nodesource
+  582  rpm -qf /etc/yum.repos.d/nodesource-el.repo 
+  583  ls -la /etc/yum.repos.d/|grep nodesource
+  584  yum remove nodesource-el
+  585  yum remove nodesource-el.repo
+  586  yum clean all
+  587  ls -la /etc/yum.repos.d/|grep nodesource
+  588  yum search nodejs npm
+  589  yum remove epel-release
+  590  yum install nodejs npm
+  591  ls -la /etc/yum.repos.d/|grep nodesource
+  592  yum clean all
+  593  yum install nodejs npm
+  594  ls -la /etc/yum.repos.d/|grep nodesource
+  595  rm /etc/yum.repos.d/nodesource-el.repo
+  596  yum install nodejs npm
+  597  sudo yum list available nodejs
+  598  yum remove nodesource-el7.repo
+  599  yum remove nodesource-el7
+  600  which node
+  601  rm -f /etc/yum.repos.d/nodesource-el*
+  602  curl -sL https://rpm.nodesource.com/setup_12.x | bash -
+  603  rpm -qa 'node|npm' | grep -v nodesource
+  604  ls -la /etc/yum.repos.d/|grep nodesource
+  605  sudo yum list available nodejs
+  606  yum install nodejs
+  607  vim /etc/yum.repos.d/epel.repo
+  608  yum clean all
+  609  cd ./etc/yum.repos.d/
+  610  ls
+  611  cd /etc/yum.repos.d/
+  612  ls
+  613  rm remi.repo.rpmsave
+  614  vim nodesource-el7.repo
+  615  yum clean all
+  616  yum install nodejs
+  617  yim install npm
+  618  yum install npm
+  619  node -v
+  620  npm -v
+  621  python -v
+  622  pip install awscli --upgrade --user
+  623  npm install -g @aws-amplify/cli
+  624  npm install -g @angular/cli
+  625  cd /home/www/
+  626  ls
+  627  cd aws-mobile-appsync-chat-starter-angular/
+  628  ls
+  629  amplify init
+  630  amplify status
+  631  ls -la
+  632  npm install
+  633  amplify add auth
+  634  amplify add analytics
+  635   amplify push
+  636   grep aws_user_pools_id src/aws-exports.js
+  637  aws cloudformation create-stack --stack-name ChatQL --template-body file://backend/deploy-cfn.yml --parameters ParameterKey=userPoolId,ParameterValue=us-east-1_PLc9rEar5 --capabilities CAPABILITY_IAM --region us-east-1
+  638  aws cloudformation describe-stacks --stack-name ChatQL --query Stacks[0].Outputs --region us-east-1
+  639  [
+  640      {         "Description": "The Endpoint URL of your GraphQL API.",;         "OutputKey": "ChatQLApiUrl",;         "OutputValue": "https://nodrlay3rrasncqx7mpruffsau.appsync-api.us-east-1.amazonaws.com/graphql";     },;     {         "Description": "Unique AWS AppSync GraphQL API Identifier",;         "OutputKey": "ChatQLApiId",;         "OutputValue": "em3qc5umcje3bfexxbdawovgqa";     }; ]
+  641  amplify add codegen --apiId em3qc5umcje3bfexxbdawovgqa
+  642  git diff src/app/API.service.ts
+  643  vim src/app/API.service.ts
+  644  amplify serve
+  645  npm install @aws-amplify/api-graphql
+  646  amplify serve
+  647  ls
+  648  cd ..
+  649  mv aws-mobile-appsync-chat-starter-angular/ googlechat
+  650  cd googlechat/
+  651  ls
+  652  ng serve
+  653  cat /proc/sys/fs/inotify/max_user_watches
+  654  echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+  655  cat /proc/sys/fs/inotify/max_user_watches
+  656  ng serve
+  657  ng serve --host 0.0.0.0 --disableHostCheck true
+  658  vim run.sh
+  659  chmod 777 run.sh 
+  660  git status
+  661  git add -A
+  662  git commit -m 'fix json';
+  663  git remote rm origin
+  664  git remote add origin https://github.com/hoai/googlemapchat.git
+  665  git branch -M main
+  666  git push -u origin main
+  667   npm install aws-amplify @aws-amplify/pushnotification
+  668  git status
+  669  ./run.sh 
+  670  vim /etc/httpd/conf/httpd.conf
+  671  service httpd restart
+  672  cd /home/www/
+  673  mkdir vowork.net
+  674  cd vowork.net/
+  675  mkdir www
+  676  cd www/
+  677  ls
+  678  vim index.html
+  679  vim phpsqlsearch_dbinfo.php
+  680  vim storelocator.php
+  681  vim index.html 
+  682  pwd
+  683  vim /etc/httpd/conf/httpd.conf
+  684  service httpd restart
+  685  vim index.html 
+  686  cd /home/www/googlechat/
+  687  ls
+  688  vim run.sh 
+  689  ./run.sh 
+  690  cd /home/www/
+  691  ls
+  692  cd googlechat
+  693  git status
+  694  git checkout package.json
+  695  git add -A
+  696  git commit -m 'add run';
+  697  npm install
+  698  htop
+  699  grep aws_user_pools_id src/aws-exports.js
+  700  history
+  701  history | grep amplify
+  702  amplify serve
+  703  ng serve --host 0.0.0.0 --disableHostCheck true
+  704  npm install --save @aws-amplify/core
+  705  ng serve --host 0.0.0.0 --disableHostCheck true
+  706  git add -A
+  707  git commit -m 'fix package';
+  708  git push
+  709  ./run.sh 
+  710  htop
+  711  history | grep amplify
+  712   amplify add codegen --apiId em3qc5umcje3bfexxbdawovgqa
+  713  npm install @aws-amplify/api-graphql
+  714  vim  aws-exports.js
+  715  ls
+  716  cd src/
+  717  vim  aws-exports.js
+  718  cd ..
+  719  ng serve --host 0.0.0.0 --disableHostCheck true
+  720  Amplify.configure() ;
+  721  ng serve --host 0.0.0.0 --disableHostCheck true
+  722  find . -type f -name ;*.js' | xargs grep -i -n -H 'Auth.configure';
+  723  find . -type f -name '*.js' | xargs grep -i -n -H 'Auth.configure';
+  724  find . -type f -name '*.js' | xargs grep -i -n -H 'Auth.signIn';
+  725  find ./src -type f -name '*.js' | xargs grep -i -n -H 'Auth.signIn';
+  726  amplify push
+  727  vim ./src/aws-exports.js
+  728  ls
+  729  cd src/
+  730  ls
+  731  cd ..
+  732  amplify init
+  733  find ./src -type f -name '*.js' | xargs grep -i -n -H 'onSignIn';
+  734  find ./src -type f | xargs grep -i -n -H 'onSignIn';
+  735  ng serve --host 0.0.0.0 --disableHostCheck true
+  736  amplify add auth
+  737  git status
+  738  amplify update auth
+  739  ng serve --host 0.0.0.0 --disableHostCheck true
+  740  ng build
+  741  git status
+  742  git diff 
+  743  git diff package.json
+  744  npm install
+  745  ng serve --host 0.0.0.0 --disableHostCheck true
+  746  npm install --save @aws-amplify/api-graphql
+  747  ng serve --host 0.0.0.0 --disableHostCheck true
+  748  ls
+  749  rm -rf node_modules/
+  750  npm install
+  751  cd /home/www/googlechat/
+  752  find ./src -type f  | xargs grep -i -n -H 'AuthModule ';
+  753  find ./src -type f  | xargs grep -i -n -H 'AuthModule';
+  754  ls -la
+  755  ng serve --host 0.0.0.0 --disableHostCheck true
+  756  git status
+  757  git add -A
+  758  git commit -m 'fix bug';
+  759  git push
+  760  ./run.sh 
+  761  cd /home/www/
+  762  mkdir golang
+  763  cd golang/
+  764  wget https://golang.org/dl/go1.15.2.linux-amd64.tar.gz
+  765  sudo tar -C /usr/local -xzf go1.15.2.linux-amd64.tar.gz 
+  766  ls /usr/local/go/
+  767  vim /etc/profile
+  768  cd /etc/profile.d/
+  769  ls
+  770  vim sh.local 
+  771  vim vim.sh
+  772  vim ~/.bash_profile
+  773  source ~/.bash_profile
+  774  mkdir ~/go
+  775  mkdir -p ~/go/src/hello
+  776  vim ~/go/src/hello/hello.go
+  777  cd ~/go/src/hello
+  778  go build
+  779  ./hello
+  780  vim ~/.bashrc
+  781  echo $GOPATH
+  782  echo GOPATH
+  783  cd ~/go
+  784  ls
+  785  mkdir bin
+  786  mkdir pkg
+  787  vim /etc/profile.d/path.sh
+  788  vim ~/.bash_profile
+  789  source ~/.bash_profile
+  790   echo $GOPATH
+  791  ls -la /root/go/src
+  792  vim ~/.bash_profile
+  793   source ~/.bash_profile
+  794  cd ~/go
+  795  ls
+  796  cd src/
+  797  vim env_check.go
+  798  mv env_check.go main.go
+  799  go run main.go
+  800  vim ~/.bash_profile
+  801   source ~/.bash_profile
+  802  go run main.go
+  803  ls
+  804  wget https://github.com/gobuffalo/buffalo/releases/download/v0.16.15/buffalo_0.16.15_Linux_x86_64.tar.gz
+  805  tar -xvzf buffalo_0.16.15_Linux_x86_64.tar.gz
+  806  ls
+  807  sudo mv buffalo /usr/local/bin/buffalo
+  808  ls
+  809  buffalo
+  810   cd $GOPATH/src/github.com/$USER/
+  811  mkdir github.com/hoai/
+  812  mkdir -p github.com/hoai/
+  813  cd github.com/hoai/
+  814  pwd
+  815  buffalo new coke
+  816  buffalo dev
+  817  ls
+  818  vim $HOME/.buffalo.yml 
+  819  buffalo new demo
+  820  cd demo/
+  821  buffalo dev
+  822  buffalo db create
+  823  buffalo db migrate
+  824  vim /etc/httpd/conf/httpd.conf
+  825  service httpd restart
+  826  sudo yum install postgresql-server postgresql-contrib
+  827  sudo postgresql-setup initdb
+  828  sudo systemctl start postgresql
+  829  sudo systemctl enable postgresql
+  830  psql postgres
+  831  sudo passwd postgres
+  832  su - postgres
+  833  sudo passwd postgres
+  834  su - postgres
+  835  echo $GOPATH
+  836  echo $GOROOT
+  837  cd ~/go/src/github.com/hoai/demo/
+  838  ls
+  839  histoty
+  840  history
+  841  buffalo dev
+  842  su -postgres
+  843  su - postgres
+  844  cd ~/go/src/github.com/hoai/demo/
+  845  sudo passwd postgres
+  846  su - postgres
+  847  buffalo db create
+  848  psql -U postgres
+  849  psql -U postgres -ddemo_development
+  850  psql -h 127.0.0.1 -U postgres -d demo_development
+  851  cd  /etc/postgresql/
+  852  vim /var/lib/pgsql/data/postgresql.conf
+  853  vim /var/lib/pgsql/data/pg_hba.conf
+  854  sudo /etc/init.d/postgresql restart
+  855  service postgresql restart
+  856  psql -h 127.0.0.1 -U postgres -d demo_development
+  857  psql -h 127.0.0.1 -U postgres -d demo_development - psql -h 127.0.0.1 -U postgres -d demo_development -PGPASSWORD=12345,Rabbit
+  858  psql -h 127.0.0.1 -U postgres -d demo_development -P 12345,Rabbit
+  859  pg_isready -d demo_development -h 127.0.0.1-p 5432 -U postgres    
+  860  sudo -u postgres psql
+  861  vim /var/lib/pgsql/data/postgresql.conf
+  862  service postgresql restart
+  863  psql -h 127.0.0.1 -U postgres -d demo_development -P 12345,Rabbit
+  864  psql -h 127.0.0.1 -U postgres -d demo_development 
+  865  man psql
+  866  psql -h 127.0.0.1 -U postgres -d demo_development --password
+  867  sudo -u postgres psql postgres
+  868  psql -h 127.0.0.1 -U postgres -d demo_development --password
+  869  su - postgres
+  870  su -c "psql" - postgres
+  871  su - postgres
+  872  sudo service postgresql restart
+  873  history
+  874  cd /var/lib/pgsql/data/
+  875  ls
+  876  vim pg_hba.conf
+  877  sudo service postgresql restart
+  878  psql -U postgre -W
+  879  vim pg_hba.conf
+  880  psql -U postgre -W
+  881  sudo service postgresql restart
+  882  psql -U postgre -W
+  883  sudo -u postgres psql postgres
+  884  vim pg_hba.conf
+  885  sudo service postgresql restart
+  886  sudo -u postgres psql postgres
+  887  psql -U postgre -W
+  888  sudo passwd postgres
+  889  psql -U postgre -W
+  890  su - postgres
+  891  su --shell /bin/bash postgres
+  892  ls
+  893  vim pg_hba.conf
+  894  sudo service postgresql restart
+  895  vim pg_hba.conf
+  896  sudo service postgresql restart
+  897  vim pg_hba.conf
+  898  sudo service postgresql restart
+  899  systemctl status postgresql.service
+  900  sudo service postgresql restart
+  901  vim pg_hba.conf
+  902  sudo service postgresql restart
+  903  vim pg_hba.conf
+  904  sudo service postgresql restart
+  905  vim pg_hba.conf
+  906  sudo service postgresql restart
+  907  cd /root/go/src/github.com/hoai/
+  908  ls
+  909  cd vuerecipe/
+  910  buffalo task routes
+  911  buffalo task db:seed
+  912   buffalo task routes
+  913  git status
+  914  git push
+  915  history | grep php
+  916  php -v
+  917  yum install php--pgsql
+  918  yum install php-pgsql
+  919  yum search php-pgsql
+  920  php -v
+  921  yum install php-pgsql-5.6.*
+  922  yum install php56-php-pgsql
+  923  php -m
+  924  cd ~/go/src/github.com/hoai/demo/
+  925  buffalo dev
+  926  cd ..
+  927  ls
+  928  git clone https://github.com/hoai/vuerecipe
+  929  ls
+  930  cd vuerecipe
+  931  buffalo dev
+  932  curl --silent --location https://dl.yarnpkg.com/rpm/yarn.repo | sudo tee /etc/yum.repos.d/yarn.repo
+  933  sudo yum install yarn
+  934  yarn
+  935  buffalo dev
+  936  npm rebuild node-sass
+  937  npm -v
+  938  npm install
+  939  sudo npm cache clean --force
+  940  sudo rm -rf package-lock.json node_modules
+  941  sudo npm i --unsafe-perm node-sass
+  942  sudo npm install --unsafe-perm=true --allow-roo
+  943  npm install
+  944  history
+  945  buffalo dev
+  946  buffalo db migrate
+  947  buffalo dev
+  948  git remote rm origin
+  949  git remote add origin https://github.com/hoai/vuerecipe-hoai.git
+  950  git branch -M main
+  951  git push -u origin main
+  952  git status
+  953  git add -A
+  954  git commit -m 'fix package';
+  955  git push
+  956  htop
+  957  buffalo dev
+  958  htop
+  959  cd /home/www/subtitle
+  960  ls
+  961  cd /home/www/subtitle.com
+  962  ls
+  963  cd /home/www/subtitlevideo.com/
+  964  rm adminer-4.7.7.php 
+  965  htop
+  966  sudo passwd root
+  967  ifconfig
+  968  ping google.com
+  969  route -n flush
+  970  vim /etc/sysconfig/network-scripts/ifcfg-eth0 
+  971  uuuu:q!
+  972  vim /etc/sysconfig/network-scripts/ifcfg-eth0 
+  973  ping google.com
+  974  ifup eth0
+  975  vim /etc/sysconfig/network-scripts/ifcfg-eth0 
+  976  ifup eth0
+  977  vim /etc/sysconfig/network-scripts/ifcfg-eth0 
+  978  ifup eth0
+  979  vim /etc/sysconfig/network-scripts/ifcfg-eth0 
+  980  ifup eth0
+  981  ifconfig -a
+  982  vim /etc/sysconfig/network-scripts/ifcfg-eth0 
+  983  ifconfig -a
+  984  vim /etc/sysconfig/network-scripts/ifcfg-eth0 
+  985  ifconfig -a
+  986  ifup eth0
+  987  ping google.com
+  988  vim /etc/sysconfig/network-scripts/ifcfg-eth0 
+  989  ifup eth0
+  990  systemctl restart network
+  991  ping google.com
+  992  htop
+  993  df -h
+  994  ls -la
+  995  find . -type f -name './fri';
+  996  find / -type f -name '*./fri';
+  997  find / -type f -name 'fri';
+  998  htop
+  999  sudo passwd postgres
+ 1000  htop
+ 1001  ls 
+ 1002  ls -la /home/
+ 1003  ls -la ~/
+ 1004  cd ~/
+ 1005  ls
+ 1006  ls -la
+ 1007  vim .pki/
+ 1008  htop
+ 1009  history
+ 1010  vim vim /etc/sysconfig/network-scripts/ifcfg-eth0
+ 1011  vim /etc/sysconfig/network-scripts/ifcfg-eth0
+ 1012  service postgresql restart
+ 1013  systemctl status postgresql.service
+ 1014  sudo systemctl status postgresql.service
+ 1015  ls -la /var/lib/pgsql/data
+ 1016  chmod 700 -R /var/lib/pgsql/data
+ 1017  sudo systemctl status postgresql.service
+ 1018  chmod 700 -R /var/lib/pgsql/
+ 1019  sudo systemctl status postgresql.service
+ 1020  history
+ 1021  ping google.com
+ 1022  vim /etc/sysconfig/network-scripts/ifcfg-eth0
+ 1023  htop
+ 1024  service postgresql start
+ 1025  htop
+ 1026  cd ~/go/src/github.com/hoai/vuerecipe/
+ 1027  ls
+ 1028  history
+ 1029  vim run.sh
+ 1030  chmod 777 run.sh 
+ 1031  git status
+ 1032  git add -A
+ 1033  git commit -m 'fix sh';
+ 1034  git push
+ 1035  cd /home/www/subtitlevideo.com/
+ 1036  git status
+ 1037  git diff index.php
+ 1038  git add -A
+ 1039  git commit -m 'fix header';
+ 1040  git push
+ 1041  htop
+ 1042  cd ~/go/src/github.com/hoai/vuerecipe/
+ 1043  ls
+ 1044  history
+ 1045  buffalo dev
+ 1046  git status
+ 1047  npm install vuetify
+ 1048  npm install sass sass-loader deepmerge -D
+ 1049  git status
+ 1050  git diff package.json
+ 1051  buffalo dev
+ 1052  ERROR in ./node_modules/vuetify/dist/vuetify.min.css
+ 1053  npm install sass sass-loader deepmerge --save
+ 1054  npm install vuetify --save
+ 1055  buffalo dev
+ 1056  htop
+ 1057  buffalo dev
+ 1058  npm install vuetify-loader --save
+ 1059  buffalo dev
+ 1060  git checkout vuetifyjs
+ 1061  git checkout vuetifyjs -b
+ 1062  git checkout -b vuetifyjs 
+ 1063  git status
+ 1064  git add -A
+ 1065  git commit -m 'add vuetifyjs';
+ 1066  git branch
+ 1067  git checkout main
+ 1068  git log
+ 1069  buffalo dev
+ 1070  htop
+ 1071  buffalo generate resource category name description:text path parent_id:uuid --type=json
+ 1072  buffalo generate resource category name description:text url parent_id:uuid --type=json
+ 1073  buffalo generate resource category title description:nulls.Text url parent_id:uuid --type=json
+ 1074  buffalo generate resource category title description:nulls.Text url parent_id::uuid --type=json
+ 1075  buffalo generate resource category title description:nulls.Text url category_id:uuid --type=json
+ 1076  buffalo generate resource category title description:nulls.Text category_id:uuid --type=json
+ 1077  buffalo generate resource category title description:nulls.Text --type=json
+ 1078  buffalo generate resource category title description:nulls.Text category_id:uuid --skip-templates
+ 1079  vim rac.txt
+ 1080  buffalo generate resource post title short_desc:nulls.Text  description:nulls.Text category_id:uuid --skip-templates
+ 1081  buffalo db migrate
+ 1082  buffalo task routes
+ 1083  git status
+ 1084  buffalo task routes
+ 1085  git status
+ 1086  git diff actions/app.go
+ 1087  git diff go.mod
+ 1088  buffalo task routes
+ 1089  buffalo dev
+ 1090  git status
+ 1091  git checkout go.mod go.sum
+ 1092  buffalo dev
+ 1093  git status
+ 1094  vim migrations/20201009075231_create_categories.up.fizz
+ 1095  git diff actions/app.go
+ 1096  git status
+ 1097  vimdiff actions/bands.go actions/categories.go
+ 1098  git status
+ 1099  buffalo dev
+ 1100  git status
+ 1101  vimdiff models/band.go models/category.go
+ 1102  vimdiff actions/categories.go actions/bands.go 
+ 1103  man buffalo 
+ 1104  buffalo 
+ 1105  buffalo  info
+ 1106  buffalo 
+ 1107  buffalo fix
+ 1108  buffalo dev
+ 1109  git status
+ 1110  git checkout go.mod go.sum
+ 1111  git status
+ 1112  buffalo dev
+ 1113  git status
+ 1114  git add -A
+ 1115  git commit -m 'add demo';
+ 1116  git push
+ 1117  buffalo task routes
+ 1118  buffalo dev
+ 1119  history
+ 1120  descriptionbuffalo task db:seed
+ 1121  buffalo task db:seed
+ 1122  git status
+ 1123  git add -A
+ 1124  git commit -m 'fix file'
+ 1125  git push
+ 1126  buffalo db migrate down
+ 1127  git status
+ 1128  buffalo db migrate up
+ 1129  buffalo task db:seed
+ 1130  buffalo db migrate down
+ 1131  buffalo db migrate up
+ 1132  buffalo task db:seed
+ 1133  buffalo db drop -e demo_development
+ 1134  buffalo db drop -e dev
+ 1135  buffalo db drop -e development
+ 1136  buffalo db create -a
+ 1137  buffalo db migrate
+ 1138  buffalo task db:seed
+ 1139  buffalo dev
+ 1140  history > use.txt

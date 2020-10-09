@@ -1,8 +1,8 @@
 create_table("posts") {
 	t.Column("id", "uuid", {primary: true})
 	t.Column("title", "string", {})
-	t.Column("short_desc", "text", {null: true})
-	t.Column("description", "text", {null: true})
+	t.Column("short_desc", "text", {})
+	t.Column("description", "text", {})
 	t.Column("category_id", "uuid", {})
 	t.Timestamps()
 }

@@ -5,7 +5,6 @@ import (
 	"time"
 
 	"github.com/gobuffalo/pop"
-	"github.com/gobuffalo/pop/nulls"
 	"github.com/gobuffalo/validate"
 	"github.com/gobuffalo/validate/validators"
 	"github.com/gofrs/uuid"
@@ -14,8 +13,7 @@ import (
 type Category struct {
     ID uuid.UUID `json:"id" db:"id"`
     Title string `json:"title" db:"title"`
-    Description nulls.String `json:"description" db:"description"`
-    CategoryID uuid.UUID `json:"category_id" db:"category_id"`
+    Description string `json:"description" db:"description"`
     CreatedAt time.Time `json:"created_at" db:"created_at"`
     UpdatedAt time.Time `json:"updated_at" db:"updated_at"`
 }

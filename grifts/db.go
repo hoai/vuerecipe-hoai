@@ -15,17 +15,17 @@ var _ = grift.Namespace("db", func() {
 		}
 
 		category := &models.Category{
-			Title: "The Beatles",
-			Description:  "4 fun loving lads from Liverpool.",
+			Title: "Laptop",
+			Description:  "this is category laptop",
 		}
 		if err := models.DB.Create(category); err != nil {
 			return errors.WithStack(err)
 		}
 		posts := models.Posts{
-			{Title: "John Lennon", Description: "Guitar"},
-			{Title: "Paul McCartney", Description: "Bass"},
-			{Title: "George Harrison", Description: "Guitar"},
-			{Title: "Ringo Starr", Description: "Drums"},
+			{Title: "Laptop new 1", Description: "Guitar"},
+			{Title: "Laptop new 2", Description: "Bass"},
+			{Title: "Laptop new 3", Description: "Guitar"},
+			{Title: "Laptop new 4", Description: "Drums"},
 		}
 		for _, m := range posts {
 			m.CategoryID = category.ID
@@ -35,17 +35,17 @@ var _ = grift.Namespace("db", func() {
 		}
 
 		category = &models.Category{
-			Title: "The Monkees",
-			Description:  "4 fun loving lads assembled by a TV studio",
+			Title: "Mobile",
+			Description:  "this is mobile",
 		}
 		if err := models.DB.Create(category); err != nil {
 			return errors.WithStack(err)
 		}
 		posts = models.Posts{
-			{Title: "Mike Nesmith", Description: "Guitar"},
-			{Title: "Davy Jones", Description: "Voice"},
-			{Title: "Peter Tork", Description: "Guitar"},
-			{Title: "Mikey Dolenz", Description: "Drums"},
+			{Title: "Mobile Mike Nesmith", Description: "Guitar"},
+			{Title: "Mobile Davy Jones", Description: "Voice"},
+			{Title: "Mobile Peter Tork", Description: "Guitar"},
+			{Title: "Mobile Mikey Dolenz", Description: "Drums"},
 		}
 		for _, m := range posts {
 			m.CategoryID = category.ID

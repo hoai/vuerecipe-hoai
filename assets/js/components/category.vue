@@ -34,7 +34,7 @@ export default {
     fetchData: function() {
       let req = $.getJSON("/api/categories");
       req.done(data => {
-        this.categorys = data;
+        this.categories = data;
       });
     }
   }
