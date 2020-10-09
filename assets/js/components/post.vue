@@ -5,14 +5,15 @@
   <blockquote>
     {{category.description}}
   </blockquote>
-
-  <ul class="list-unstyled">
+  <b>List products here: </b>
+  <ol>
     <li v-for="post in posts">
-      <h2>
-        {{post.title}} - {{post.description}}
-      </h2>
+      <i>
+        {{post.title}}
+      </i>
+      <p>    Description: {{post.description}}</p>
     </li>
-  </ul>
+  </ol>
 
 </div>
 </template>

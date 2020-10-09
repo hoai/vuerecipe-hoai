@@ -1,0 +1,317 @@
+buffalo: 2020/10/09 09:40:01 === Rebuild on: :start: ===
+buffalo: 2020/10/09 09:40:01 [32m=== Running: go build -v -tags development -o tmp/vueband-build  (PID: 31581) ===[0m
+yarn run v1.22.5
+$ webpack --watch
+buffalo: 2020/10/09 09:40:04 [32m=== Building Completed (PID: 31581) (Time: 2.444519869s) ===[0m
+buffalo: 2020/10/09 09:40:04 [32m=== Running: tmp/vueband-build (PID: 31654) ===[0m
+[36mINFO[0m[2020-10-09T09:40:04Z] Starting application at http://127.0.0.1:3000
+[36mINFO[0m[2020-10-09T09:40:04Z] Starting Simple Background Worker
+
+webpack is watching the files…
+
+Live Reload listening on port 35729
+
+Hash: 8c7705f460a38cdfe751
+Version: webpack 4.5.0
+Time: 6767ms
+Built at: 10/9/2020 9:40:12 AM
+                               Asset       Size       Chunks             Chunk Names
+674f50d287a8c48dc19ba404d20fe713.eot    162 KiB               [emitted]  
+application.ee8a6cf2709b17d33993.css   1.15 MiB  application  [emitted]  application
+ application.8c7705f460a38cdfe751.js    888 KiB  application  [emitted]  application
+                     images/logo.svg   64.4 KiB               [emitted]  
+                       manifest.json  224 bytes               [emitted]  
+Entrypoint application = application.ee8a6cf2709b17d33993.css application.8c7705f460a38cdfe751.js
+   [0] multi ./assets/js/application.js ./node_modules/jquery-ujs/src/rails.js ./assets/css/application.scss 52 bytes {application} [built]
+[./assets/css/application.scss] 39 bytes {application} [built]
+[./assets/js/application.js] 864 bytes {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 509 bytes {application} [built]
+    + 36 hidden modules
+Child mini-css-extract-plugin node_modules/css-loader/index.js??ref--2-1!node_modules/sass-loader/dist/cjs.js??ref--2-2!assets/css/application.scss:
+    Entrypoint mini-css-extract-plugin = *
+    [./node_modules/css-loader/index.js??ref--2-1!./node_modules/sass-loader/dist/cjs.js??ref--2-2!./assets/css/application.scss] ./node_modules/css-loader??ref--2-1!./node_modules/sass-loader/dist/cjs.js??ref--2-2!./assets/css/application.scss 378 KiB {mini-css-extract-plugin} [built]
+        + 9 hidden modules
+[36mINFO[0m[2020-10-09T09:40:17Z] / [36mcontent_type[0m=text/html [36mdb[0m=0s [36mduration[0m=11.653878ms [36mhuman_size[0m="712 B" [36mmethod[0m=GET [36mparams[0m="{}" [36mpath[0m=/ [36mrender[0m=1.209262ms [36mrequest_id[0m=9e0c09079f2fefd1cb81-386fed42e897b057d89a [36msize[0m=712 [36mstatus[0m=200
+[37mDEBU[0m[2020-10-09T09:40:17Z] SELECT categories.created_at, categories.description, categories.id, categories.title, categories.updated_at FROM categories AS categories LIMIT 20 OFFSET 0
+[37mDEBU[0m[2020-10-09T09:40:17Z] SELECT COUNT(*) AS row_count FROM (SELECT categories.created_at, categories.description, categories.id, categories.title, categories.updated_at FROM categories AS categories) a
+[36mINFO[0m[2020-10-09T09:40:17Z] /api/categories/ [36mcontent_type[0m=application/json [36mdb[0m=2.596991ms [36mduration[0m=3.547354ms [36mhuman_size[0m="370 B" [36mmethod[0m=GET [36mparams[0m="{}" [36mpath[0m=/api/categories/ [36mrender[0m="123.587µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-cc5381a90f4f94ba8725 [36msize[0m=370 [36mstatus[0m=200
+[36mINFO[0m[2020-10-09T09:40:18Z] /favicon.ico/ [36mcontent_type[0m=image/avif [36mdb[0m=0s [36mduration[0m=1.720678ms [36mhuman_size[0m="712 B" [36mmethod[0m=GET [36mparams[0m="{\"path\":[\"favicon.ico\"]}" [36mpath[0m=/favicon.ico/ [36mrender[0m="892.519µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-592447b642c22d0c2de0 [36msize[0m=712 [36mstatus[0m=200
+[37mDEBU[0m[2020-10-09T09:40:19Z] SELECT posts.category_id, posts.created_at, posts.description, posts.id, posts.short_desc, posts.title, posts.updated_at FROM posts AS posts WHERE category_id = $1 LIMIT 20 OFFSET 0 [37m$1[0m=5c897555-e132-488f-8963-e8efb2f327cd
+[37mDEBU[0m[2020-10-09T09:40:19Z] SELECT COUNT(*) AS row_count FROM (SELECT posts.category_id, posts.created_at, posts.description, posts.id, posts.short_desc, posts.title, posts.updated_at FROM posts AS posts WHERE category_id = $1) a [37m$1[0m=5c897555-e132-488f-8963-e8efb2f327cd
+[36mINFO[0m[2020-10-09T09:40:19Z] /api/categories/5c897555-e132-488f-8963-e8efb2f327cd/posts/ [36mcontent_type[0m=application/json [36mdb[0m=4.42671ms [36mduration[0m=5.924049ms [36mhuman_size[0m="1.0 kB" [36mmethod[0m=GET [36mparams[0m="{\"category_id\":[\"5c897555-e132-488f-8963-e8efb2f327cd\"]}" [36mpath[0m=/api/categories/5c897555-e132-488f-8963-e8efb2f327cd/posts/ [36mrender[0m="157.93µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-328d0636f497e8f486e9 [36msize[0m=1012 [36mstatus[0m=200
+[37mDEBU[0m[2020-10-09T09:40:19Z] SELECT categories.created_at, categories.description, categories.id, categories.title, categories.updated_at FROM categories AS categories WHERE categories.id = $1 LIMIT 1 [37m$1[0m=5c897555-e132-488f-8963-e8efb2f327cd
+[36mINFO[0m[2020-10-09T09:40:19Z] /api/categories/5c897555-e132-488f-8963-e8efb2f327cd/ [36mcontent_type[0m=application/json [36mdb[0m=1.489366ms [36mduration[0m=16.587905ms [36mhuman_size[0m="180 B" [36mmethod[0m=GET [36mparams[0m="{\"category_id\":[\"5c897555-e132-488f-8963-e8efb2f327cd\"]}" [36mpath[0m=/api/categories/5c897555-e132-488f-8963-e8efb2f327cd/ [36mrender[0m="127.429µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-b98a7dbffd53a500d407 [36msize[0m=180 [36mstatus[0m=200
+[36mINFO[0m[2020-10-09T09:40:19Z] /favicon.ico/ [36mcontent_type[0m=image/avif [36mdb[0m=0s [36mduration[0m=3.860886ms [36mhuman_size[0m="712 B" [36mmethod[0m=GET [36mparams[0m="{\"path\":[\"favicon.ico\"]}" [36mpath[0m=/favicon.ico/ [36mrender[0m=1.942838ms [36mrequest_id[0m=9e0c09079f2fefd1cb81-3f935b8025cc0a875214 [36msize[0m=712 [36mstatus[0m=200
+[37mDEBU[0m[2020-10-09T09:40:21Z] SELECT categories.created_at, categories.description, categories.id, categories.title, categories.updated_at FROM categories AS categories LIMIT 20 OFFSET 0
+[37mDEBU[0m[2020-10-09T09:40:21Z] SELECT COUNT(*) AS row_count FROM (SELECT categories.created_at, categories.description, categories.id, categories.title, categories.updated_at FROM categories AS categories) a
+[36mINFO[0m[2020-10-09T09:40:21Z] /api/categories/ [36mcontent_type[0m=application/json [36mdb[0m=1.53435ms [36mduration[0m=14.790599ms [36mhuman_size[0m="370 B" [36mmethod[0m=GET [36mparams[0m="{}" [36mpath[0m=/api/categories/ [36mrender[0m="116.176µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-cd8364bdaef3c108b9ee [36msize[0m=370 [36mstatus[0m=200
+[36mINFO[0m[2020-10-09T09:40:21Z] /favicon.ico/ [36mcontent_type[0m=image/avif [36mdb[0m=0s [36mduration[0m=1.999843ms [36mhuman_size[0m="712 B" [36mmethod[0m=GET [36mparams[0m="{\"path\":[\"favicon.ico\"]}" [36mpath[0m=/favicon.ico/ [36mrender[0m="843.244µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-b266e590bee1bb632d6c [36msize[0m=712 [36mstatus[0m=200
+[37mDEBU[0m[2020-10-09T09:40:22Z] SELECT posts.category_id, posts.created_at, posts.description, posts.id, posts.short_desc, posts.title, posts.updated_at FROM posts AS posts WHERE category_id = $1 LIMIT 20 OFFSET 0 [37m$1[0m=bb6497d0-d35f-4f6b-8d55-126b6ba747cd
+[37mDEBU[0m[2020-10-09T09:40:22Z] SELECT COUNT(*) AS row_count FROM (SELECT posts.category_id, posts.created_at, posts.description, posts.id, posts.short_desc, posts.title, posts.updated_at FROM posts AS posts WHERE category_id = $1) a [37m$1[0m=bb6497d0-d35f-4f6b-8d55-126b6ba747cd
+[36mINFO[0m[2020-10-09T09:40:22Z] /api/categories/bb6497d0-d35f-4f6b-8d55-126b6ba747cd/posts/ [36mcontent_type[0m=application/json [36mdb[0m=1.3616ms [36mduration[0m=2.78285ms [36mhuman_size[0m="987 B" [36mmethod[0m=GET [36mparams[0m="{\"category_id\":[\"bb6497d0-d35f-4f6b-8d55-126b6ba747cd\"]}" [36mpath[0m=/api/categories/bb6497d0-d35f-4f6b-8d55-126b6ba747cd/posts/ [36mrender[0m="110.158µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-3de9eeb65517b3dbdece [36msize[0m=987 [36mstatus[0m=200
+[36mINFO[0m[2020-10-09T09:40:22Z] /favicon.ico/ [36mcontent_type[0m=image/avif [36mdb[0m=0s [36mduration[0m=1.697939ms [36mhuman_size[0m="712 B" [36mmethod[0m=GET [36mparams[0m="{\"path\":[\"favicon.ico\"]}" [36mpath[0m=/favicon.ico/ [36mrender[0m="787.653µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-86825e8ef3f5d2d3d6b5 [36msize[0m=712 [36mstatus[0m=200
+[37mDEBU[0m[2020-10-09T09:40:22Z] SELECT categories.created_at, categories.description, categories.id, categories.title, categories.updated_at FROM categories AS categories WHERE categories.id = $1 LIMIT 1 [37m$1[0m=bb6497d0-d35f-4f6b-8d55-126b6ba747cd
+[36mINFO[0m[2020-10-09T09:40:22Z] /api/categories/bb6497d0-d35f-4f6b-8d55-126b6ba747cd/ [36mcontent_type[0m=application/json [36mdb[0m="552.322µs" [36mduration[0m=1.344463ms [36mhuman_size[0m="188 B" [36mmethod[0m=GET [36mparams[0m="{\"category_id\":[\"bb6497d0-d35f-4f6b-8d55-126b6ba747cd\"]}" [36mpath[0m=/api/categories/bb6497d0-d35f-4f6b-8d55-126b6ba747cd/ [36mrender[0m="118.002µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-c6ca3ae9e302dd2a59f1 [36msize[0m=188 [36mstatus[0m=200
+[36mINFO[0m[2020-10-09T09:40:25Z] /favicon.ico/ [36mcontent_type[0m=image/avif [36mdb[0m=0s [36mduration[0m=2.166888ms [36mhuman_size[0m="712 B" [36mmethod[0m=GET [36mparams[0m="{\"path\":[\"favicon.ico\"]}" [36mpath[0m=/favicon.ico/ [36mrender[0m=1.12437ms [36mrequest_id[0m=9e0c09079f2fefd1cb81-8567f6f96b95164b7268 [36msize[0m=712 [36mstatus[0m=200
+[37mDEBU[0m[2020-10-09T09:40:25Z] SELECT categories.created_at, categories.description, categories.id, categories.title, categories.updated_at FROM categories AS categories LIMIT 20 OFFSET 0
+[37mDEBU[0m[2020-10-09T09:40:25Z] SELECT COUNT(*) AS row_count FROM (SELECT categories.created_at, categories.description, categories.id, categories.title, categories.updated_at FROM categories AS categories) a
+[36mINFO[0m[2020-10-09T09:40:25Z] /api/categories/ [36mcontent_type[0m=application/json [36mdb[0m="789.957µs" [36mduration[0m=1.835856ms [36mhuman_size[0m="370 B" [36mmethod[0m=GET [36mparams[0m="{}" [36mpath[0m=/api/categories/ [36mrender[0m="116.009µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-5c7d9c23f49ff825e5c0 [36msize[0m=370 [36mstatus[0m=200
+[37mDEBU[0m[2020-10-09T09:41:08Z] SELECT categories.created_at, categories.description, categories.id, categories.title, categories.updated_at FROM categories AS categories WHERE categories.id = $1 LIMIT 1 [37m$1[0m=5c897555-e132-488f-8963-e8efb2f327cd
+[36mINFO[0m[2020-10-09T09:41:08Z] /api/categories/5c897555-e132-488f-8963-e8efb2f327cd/ [36mcontent_type[0m=application/json [36mdb[0m="613.377µs" [36mduration[0m=1.530056ms [36mhuman_size[0m="180 B" [36mmethod[0m=GET [36mparams[0m="{\"category_id\":[\"5c897555-e132-488f-8963-e8efb2f327cd\"]}" [36mpath[0m=/api/categories/5c897555-e132-488f-8963-e8efb2f327cd/ [36mrender[0m="114.706µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-8d63bf745c578623e797 [36msize[0m=180 [36mstatus[0m=200
+[37mDEBU[0m[2020-10-09T09:41:08Z] SELECT posts.category_id, posts.created_at, posts.description, posts.id, posts.short_desc, posts.title, posts.updated_at FROM posts AS posts WHERE category_id = $1 LIMIT 20 OFFSET 0 [37m$1[0m=5c897555-e132-488f-8963-e8efb2f327cd
+[36mINFO[0m[2020-10-09T09:41:08Z] /favicon.ico/ [36mcontent_type[0m=image/avif [36mdb[0m=0s [36mduration[0m=13.524995ms [36mhuman_size[0m="712 B" [36mmethod[0m=GET [36mparams[0m="{\"path\":[\"favicon.ico\"]}" [36mpath[0m=/favicon.ico/ [36mrender[0m=6.890625ms [36mrequest_id[0m=9e0c09079f2fefd1cb81-3cf489275a70ed15d1f8 [36msize[0m=712 [36mstatus[0m=200
+[37mDEBU[0m[2020-10-09T09:41:08Z] SELECT COUNT(*) AS row_count FROM (SELECT posts.category_id, posts.created_at, posts.description, posts.id, posts.short_desc, posts.title, posts.updated_at FROM posts AS posts WHERE category_id = $1) a [37m$1[0m=5c897555-e132-488f-8963-e8efb2f327cd
+[36mINFO[0m[2020-10-09T09:41:08Z] /api/categories/5c897555-e132-488f-8963-e8efb2f327cd/posts/ [36mcontent_type[0m=application/json [36mdb[0m=28.306774ms [36mduration[0m=36.458662ms [36mhuman_size[0m="1.0 kB" [36mmethod[0m=GET [36mparams[0m="{\"category_id\":[\"5c897555-e132-488f-8963-e8efb2f327cd\"]}" [36mpath[0m=/api/categories/5c897555-e132-488f-8963-e8efb2f327cd/posts/ [36mrender[0m="145.003µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-7d0dbe293c1c561b9168 [36msize[0m=1012 [36mstatus[0m=200
+[37mDEBU[0m[2020-10-09T09:41:09Z] SELECT categories.created_at, categories.description, categories.id, categories.title, categories.updated_at FROM categories AS categories LIMIT 20 OFFSET 0
+[37mDEBU[0m[2020-10-09T09:41:09Z] SELECT COUNT(*) AS row_count FROM (SELECT categories.created_at, categories.description, categories.id, categories.title, categories.updated_at FROM categories AS categories) a
+[36mINFO[0m[2020-10-09T09:41:09Z] /favicon.ico/ [36mcontent_type[0m=image/avif [36mdb[0m=0s [36mduration[0m=1.765762ms [36mhuman_size[0m="712 B" [36mmethod[0m=GET [36mparams[0m="{\"path\":[\"favicon.ico\"]}" [36mpath[0m=/favicon.ico/ [36mrender[0m="767.767µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-4426e13ad00941a5a1be [36msize[0m=712 [36mstatus[0m=200
+[36mINFO[0m[2020-10-09T09:41:09Z] /api/categories/ [36mcontent_type[0m=application/json [36mdb[0m=9.437833ms [36mduration[0m=12.795491ms [36mhuman_size[0m="370 B" [36mmethod[0m=GET [36mparams[0m="{}" [36mpath[0m=/api/categories/ [36mrender[0m="98.743µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-85a5348512f5aa6e2fb8 [36msize[0m=370 [36mstatus[0m=200
+[36mINFO[0m[2020-10-09T09:41:11Z] /favicon.ico/ [36mcontent_type[0m=image/avif [36mdb[0m=0s [36mduration[0m=1.708055ms [36mhuman_size[0m="712 B" [36mmethod[0m=GET [36mparams[0m="{\"path\":[\"favicon.ico\"]}" [36mpath[0m=/favicon.ico/ [36mrender[0m="905.215µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-c01ba5e530b0d5f09178 [36msize[0m=712 [36mstatus[0m=200
+[37mDEBU[0m[2020-10-09T09:41:11Z] SELECT posts.category_id, posts.created_at, posts.description, posts.id, posts.short_desc, posts.title, posts.updated_at FROM posts AS posts WHERE category_id = $1 LIMIT 20 OFFSET 0 [37m$1[0m=5c897555-e132-488f-8963-e8efb2f327cd
+[37mDEBU[0m[2020-10-09T09:41:11Z] SELECT categories.created_at, categories.description, categories.id, categories.title, categories.updated_at FROM categories AS categories WHERE categories.id = $1 LIMIT 1 [37m$1[0m=5c897555-e132-488f-8963-e8efb2f327cd
+[37mDEBU[0m[2020-10-09T09:41:11Z] SELECT COUNT(*) AS row_count FROM (SELECT posts.category_id, posts.created_at, posts.description, posts.id, posts.short_desc, posts.title, posts.updated_at FROM posts AS posts WHERE category_id = $1) a [37m$1[0m=5c897555-e132-488f-8963-e8efb2f327cd
+[36mINFO[0m[2020-10-09T09:41:11Z] /api/categories/5c897555-e132-488f-8963-e8efb2f327cd/posts/ [36mcontent_type[0m=application/json [36mdb[0m=4.211004ms [36mduration[0m=7.356552ms [36mhuman_size[0m="1.0 kB" [36mmethod[0m=GET [36mparams[0m="{\"category_id\":[\"5c897555-e132-488f-8963-e8efb2f327cd\"]}" [36mpath[0m=/api/categories/5c897555-e132-488f-8963-e8efb2f327cd/posts/ [36mrender[0m="109.297µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-bec5d68c85e39e60d6b2 [36msize[0m=1012 [36mstatus[0m=200
+[36mINFO[0m[2020-10-09T09:41:11Z] /api/categories/5c897555-e132-488f-8963-e8efb2f327cd/ [36mcontent_type[0m=application/json [36mdb[0m=16.107967ms [36mduration[0m=28.371556ms [36mhuman_size[0m="180 B" [36mmethod[0m=GET [36mparams[0m="{\"category_id\":[\"5c897555-e132-488f-8963-e8efb2f327cd\"]}" [36mpath[0m=/api/categories/5c897555-e132-488f-8963-e8efb2f327cd/ [36mrender[0m="125.82µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-4a763951f0c154c25e48 [36msize[0m=180 [36mstatus[0m=200
+[37mDEBU[0m[2020-10-09T09:41:12Z] SELECT categories.created_at, categories.description, categories.id, categories.title, categories.updated_at FROM categories AS categories LIMIT 20 OFFSET 0
+[37mDEBU[0m[2020-10-09T09:41:12Z] SELECT COUNT(*) AS row_count FROM (SELECT categories.created_at, categories.description, categories.id, categories.title, categories.updated_at FROM categories AS categories) a
+[36mINFO[0m[2020-10-09T09:41:12Z] /api/categories/ [36mcontent_type[0m=application/json [36mdb[0m=3.898141ms [36mduration[0m=4.75927ms [36mhuman_size[0m="370 B" [36mmethod[0m=GET [36mparams[0m="{}" [36mpath[0m=/api/categories/ [36mrender[0m="89.678µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-dbe1c7e3f858ac9252cf [36msize[0m=370 [36mstatus[0m=200
+[36mINFO[0m[2020-10-09T09:41:12Z] /favicon.ico/ [36mcontent_type[0m=image/avif [36mdb[0m=0s [36mduration[0m=4.526513ms [36mhuman_size[0m="712 B" [36mmethod[0m=GET [36mparams[0m="{\"path\":[\"favicon.ico\"]}" [36mpath[0m=/favicon.ico/ [36mrender[0m="868.221µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-0c0f66e2bd02945e2fe2 [36msize[0m=712 [36mstatus[0m=200
+[37mDEBU[0m[2020-10-09T09:45:08Z] SELECT categories.created_at, categories.description, categories.id, categories.title, categories.updated_at FROM categories AS categories WHERE categories.id = $1 LIMIT 1 [37m$1[0m=bb6497d0-d35f-4f6b-8d55-126b6ba747cd
+[36mINFO[0m[2020-10-09T09:45:08Z] /api/categories/bb6497d0-d35f-4f6b-8d55-126b6ba747cd/ [36mcontent_type[0m=application/json [36mdb[0m=3.027847ms [36mduration[0m=3.939986ms [36mhuman_size[0m="188 B" [36mmethod[0m=GET [36mparams[0m="{\"category_id\":[\"bb6497d0-d35f-4f6b-8d55-126b6ba747cd\"]}" [36mpath[0m=/api/categories/bb6497d0-d35f-4f6b-8d55-126b6ba747cd/ [36mrender[0m="123.749µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-e0425956228b455d8c5c [36msize[0m=188 [36mstatus[0m=200
+[37mDEBU[0m[2020-10-09T09:45:08Z] SELECT posts.category_id, posts.created_at, posts.description, posts.id, posts.short_desc, posts.title, posts.updated_at FROM posts AS posts WHERE category_id = $1 LIMIT 20 OFFSET 0 [37m$1[0m=bb6497d0-d35f-4f6b-8d55-126b6ba747cd
+[37mDEBU[0m[2020-10-09T09:45:08Z] SELECT COUNT(*) AS row_count FROM (SELECT posts.category_id, posts.created_at, posts.description, posts.id, posts.short_desc, posts.title, posts.updated_at FROM posts AS posts WHERE category_id = $1) a [37m$1[0m=bb6497d0-d35f-4f6b-8d55-126b6ba747cd
+[36mINFO[0m[2020-10-09T09:45:08Z] /api/categories/bb6497d0-d35f-4f6b-8d55-126b6ba747cd/posts/ [36mcontent_type[0m=application/json [36mdb[0m=27.857657ms [36mduration[0m=39.73605ms [36mhuman_size[0m="987 B" [36mmethod[0m=GET [36mparams[0m="{\"category_id\":[\"bb6497d0-d35f-4f6b-8d55-126b6ba747cd\"]}" [36mpath[0m=/api/categories/bb6497d0-d35f-4f6b-8d55-126b6ba747cd/posts/ [36mrender[0m="138.735µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-e5b130ce92c1fe82bed1 [36msize[0m=987 [36mstatus[0m=200
+[36mINFO[0m[2020-10-09T09:45:08Z] /favicon.ico/ [36mcontent_type[0m=image/avif [36mdb[0m=0s [36mduration[0m=1.383384ms [36mhuman_size[0m="712 B" [36mmethod[0m=GET [36mparams[0m="{\"path\":[\"favicon.ico\"]}" [36mpath[0m=/favicon.ico/ [36mrender[0m="738.295µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-bccb61ec90abfe1806a9 [36msize[0m=712 [36mstatus[0m=200
+[36mINFO[0m[2020-10-09T09:45:09Z] /favicon.ico/ [36mcontent_type[0m=image/avif [36mdb[0m=0s [36mduration[0m=10.16169ms [36mhuman_size[0m="712 B" [36mmethod[0m=GET [36mparams[0m="{\"path\":[\"favicon.ico\"]}" [36mpath[0m=/favicon.ico/ [36mrender[0m="869.958µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-b9de683bba5039eeeccd [36msize[0m=712 [36mstatus[0m=200
+[37mDEBU[0m[2020-10-09T09:45:09Z] SELECT categories.created_at, categories.description, categories.id, categories.title, categories.updated_at FROM categories AS categories LIMIT 20 OFFSET 0
+[37mDEBU[0m[2020-10-09T09:45:09Z] SELECT COUNT(*) AS row_count FROM (SELECT categories.created_at, categories.description, categories.id, categories.title, categories.updated_at FROM categories AS categories) a
+[36mINFO[0m[2020-10-09T09:45:09Z] /api/categories/ [36mcontent_type[0m=application/json [36mdb[0m=2.868285ms [36mduration[0m=3.730257ms [36mhuman_size[0m="370 B" [36mmethod[0m=GET [36mparams[0m="{}" [36mpath[0m=/api/categories/ [36mrender[0m="97.436µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-04bf136cb8b887dc1920 [36msize[0m=370 [36mstatus[0m=200
+[36mINFO[0m[2020-10-09T09:45:10Z] /favicon.ico/ [36mcontent_type[0m=image/avif [36mdb[0m=0s [36mduration[0m=11.724519ms [36mhuman_size[0m="712 B" [36mmethod[0m=GET [36mparams[0m="{\"path\":[\"favicon.ico\"]}" [36mpath[0m=/favicon.ico/ [36mrender[0m="995.183µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-ae7cb79712705f09099a [36msize[0m=712 [36mstatus[0m=200
+[37mDEBU[0m[2020-10-09T09:45:10Z] SELECT posts.category_id, posts.created_at, posts.description, posts.id, posts.short_desc, posts.title, posts.updated_at FROM posts AS posts WHERE category_id = $1 LIMIT 20 OFFSET 0 [37m$1[0m=5c897555-e132-488f-8963-e8efb2f327cd
+[37mDEBU[0m[2020-10-09T09:45:10Z] SELECT COUNT(*) AS row_count FROM (SELECT posts.category_id, posts.created_at, posts.description, posts.id, posts.short_desc, posts.title, posts.updated_at FROM posts AS posts WHERE category_id = $1) a [37m$1[0m=5c897555-e132-488f-8963-e8efb2f327cd
+[36mINFO[0m[2020-10-09T09:45:10Z] /api/categories/5c897555-e132-488f-8963-e8efb2f327cd/posts/ [36mcontent_type[0m=application/json [36mdb[0m=1.076296ms [36mduration[0m=6.33922ms [36mhuman_size[0m="1.0 kB" [36mmethod[0m=GET [36mparams[0m="{\"category_id\":[\"5c897555-e132-488f-8963-e8efb2f327cd\"]}" [36mpath[0m=/api/categories/5c897555-e132-488f-8963-e8efb2f327cd/posts/ [36mrender[0m="106.165µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-d63c01a320f90de607c9 [36msize[0m=1012 [36mstatus[0m=200
+[37mDEBU[0m[2020-10-09T09:45:10Z] SELECT categories.created_at, categories.description, categories.id, categories.title, categories.updated_at FROM categories AS categories WHERE categories.id = $1 LIMIT 1 [37m$1[0m=5c897555-e132-488f-8963-e8efb2f327cd
+[36mINFO[0m[2020-10-09T09:45:10Z] /api/categories/5c897555-e132-488f-8963-e8efb2f327cd/ [36mcontent_type[0m=application/json [36mdb[0m=2.743742ms [36mduration[0m=3.626458ms [36mhuman_size[0m="180 B" [36mmethod[0m=GET [36mparams[0m="{\"category_id\":[\"5c897555-e132-488f-8963-e8efb2f327cd\"]}" [36mpath[0m=/api/categories/5c897555-e132-488f-8963-e8efb2f327cd/ [36mrender[0m="125.055µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-954b8c22cc90c9f95017 [36msize[0m=180 [36mstatus[0m=200
+[36mINFO[0m[2020-10-09T09:46:42Z] /index.php/?xxnew2018_url1 [36mdb[0m=0s [36mduration[0m=1.519013ms [36mhuman_size[0m="712 B" [36mmethod[0m=GET [36mparams[0m="{\"path\":[\"index.php\"],\"xxnew2018_url1\":[\"\"]}" [36mpath[0m="/index.php/?xxnew2018_url1" [36mrender[0m="716.334µs" [36mrequest_id[0m=4065484eb700693eb84e-4283abad055355c6da35 [36msize[0m=712 [36mstatus[0m=200
+[36mINFO[0m[2020-10-09T09:48:35Z] /index.php/?2020abc_url1 [36mdb[0m=0s [36mduration[0m=3.490028ms [36mhuman_size[0m="712 B" [36mmethod[0m=GET [36mparams[0m="{\"2020abc_url1\":[\"\"],\"path\":[\"index.php\"]}" [36mpath[0m="/index.php/?2020abc_url1" [36mrender[0m=1.013161ms [36mrequest_id[0m=d1574863b43b49d1f830-a903674f91654f71fe72 [36msize[0m=712 [36mstatus[0m=200
+[37mDEBU[0m[2020-10-09T09:50:20Z] SELECT categories.created_at, categories.description, categories.id, categories.title, categories.updated_at FROM categories AS categories LIMIT 20 OFFSET 0
+[37mDEBU[0m[2020-10-09T09:50:20Z] SELECT COUNT(*) AS row_count FROM (SELECT categories.created_at, categories.description, categories.id, categories.title, categories.updated_at FROM categories AS categories) a
+[36mINFO[0m[2020-10-09T09:50:20Z] /api/categories/ [36mcontent_type[0m=application/json [36mdb[0m=7.30819ms [36mduration[0m=17.977266ms [36mhuman_size[0m="370 B" [36mmethod[0m=GET [36mparams[0m="{}" [36mpath[0m=/api/categories/ [36mrender[0m="97.048µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-8ef5738cf265f59900a1 [36msize[0m=370 [36mstatus[0m=200
+[36mINFO[0m[2020-10-09T09:50:20Z] /favicon.ico/ [36mcontent_type[0m=image/avif [36mdb[0m=0s [36mduration[0m=14.079495ms [36mhuman_size[0m="712 B" [36mmethod[0m=GET [36mparams[0m="{\"path\":[\"favicon.ico\"]}" [36mpath[0m=/favicon.ico/ [36mrender[0m="898.041µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-8dcf4541de610707cae8 [36msize[0m=712 [36mstatus[0m=200
+[36mINFO[0m[2020-10-09T09:50:25Z] /favicon.ico/ [36mcontent_type[0m=image/avif [36mdb[0m=0s [36mduration[0m=18.001352ms [36mhuman_size[0m="712 B" [36mmethod[0m=GET [36mparams[0m="{\"path\":[\"favicon.ico\"]}" [36mpath[0m=/favicon.ico/ [36mrender[0m="829.729µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-242786cfdb4afb826b1e [36msize[0m=712 [36mstatus[0m=200
+[37mDEBU[0m[2020-10-09T09:50:25Z] SELECT posts.category_id, posts.created_at, posts.description, posts.id, posts.short_desc, posts.title, posts.updated_at FROM posts AS posts WHERE category_id = $1 LIMIT 20 OFFSET 0 [37m$1[0m=5c897555-e132-488f-8963-e8efb2f327cd
+[37mDEBU[0m[2020-10-09T09:50:25Z] SELECT categories.created_at, categories.description, categories.id, categories.title, categories.updated_at FROM categories AS categories WHERE categories.id = $1 LIMIT 1 [37m$1[0m=5c897555-e132-488f-8963-e8efb2f327cd
+[37mDEBU[0m[2020-10-09T09:50:25Z] SELECT COUNT(*) AS row_count FROM (SELECT posts.category_id, posts.created_at, posts.description, posts.id, posts.short_desc, posts.title, posts.updated_at FROM posts AS posts WHERE category_id = $1) a [37m$1[0m=5c897555-e132-488f-8963-e8efb2f327cd
+[36mINFO[0m[2020-10-09T09:50:25Z] /api/categories/5c897555-e132-488f-8963-e8efb2f327cd/ [36mcontent_type[0m=application/json [36mdb[0m=15.527051ms [36mduration[0m=25.477424ms [36mhuman_size[0m="180 B" [36mmethod[0m=GET [36mparams[0m="{\"category_id\":[\"5c897555-e132-488f-8963-e8efb2f327cd\"]}" [36mpath[0m=/api/categories/5c897555-e132-488f-8963-e8efb2f327cd/ [36mrender[0m="133.855µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-9a533d26005b22de75a4 [36msize[0m=180 [36mstatus[0m=200
+[36mINFO[0m[2020-10-09T09:50:25Z] /api/categories/5c897555-e132-488f-8963-e8efb2f327cd/posts/ [36mcontent_type[0m=application/json [36mdb[0m=25.393015ms [36mduration[0m=38.430526ms [36mhuman_size[0m="1.0 kB" [36mmethod[0m=GET [36mparams[0m="{\"category_id\":[\"5c897555-e132-488f-8963-e8efb2f327cd\"]}" [36mpath[0m=/api/categories/5c897555-e132-488f-8963-e8efb2f327cd/posts/ [36mrender[0m="110.37µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-62f6c8955def5a2a60b9 [36msize[0m=1012 [36mstatus[0m=200
+[37mDEBU[0m[2020-10-09T09:50:27Z] SELECT categories.created_at, categories.description, categories.id, categories.title, categories.updated_at FROM categories AS categories LIMIT 20 OFFSET 0
+[37mDEBU[0m[2020-10-09T09:50:27Z] SELECT COUNT(*) AS row_count FROM (SELECT categories.created_at, categories.description, categories.id, categories.title, categories.updated_at FROM categories AS categories) a
+[36mINFO[0m[2020-10-09T09:50:27Z] /api/categories/ [36mcontent_type[0m=application/json [36mdb[0m=13.793545ms [36mduration[0m=20.622007ms [36mhuman_size[0m="370 B" [36mmethod[0m=GET [36mparams[0m="{}" [36mpath[0m=/api/categories/ [36mrender[0m="65.52µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-418d50e963d1e54c6f97 [36msize[0m=370 [36mstatus[0m=200
+[36mINFO[0m[2020-10-09T09:50:27Z] /favicon.ico/ [36mcontent_type[0m=image/avif [36mdb[0m=0s [36mduration[0m=15.754507ms [36mhuman_size[0m="712 B" [36mmethod[0m=GET [36mparams[0m="{\"path\":[\"favicon.ico\"]}" [36mpath[0m=/favicon.ico/ [36mrender[0m="776.972µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-ca9dc0e3a795be4fc2d0 [36msize[0m=712 [36mstatus[0m=200
+[36mINFO[0m[2020-10-09T09:50:56Z] /favicon.ico/ [36mcontent_type[0m=image/avif [36mdb[0m=0s [36mduration[0m=30.683451ms [36mhuman_size[0m="712 B" [36mmethod[0m=GET [36mparams[0m="{\"path\":[\"favicon.ico\"]}" [36mpath[0m=/favicon.ico/ [36mrender[0m=1.149448ms [36mrequest_id[0m=9e0c09079f2fefd1cb81-6c7b92ccbf18a61a6dae [36msize[0m=712 [36mstatus[0m=200
+[37mDEBU[0m[2020-10-09T09:51:11Z] SELECT categories.created_at, categories.description, categories.id, categories.title, categories.updated_at FROM categories AS categories WHERE categories.id = $1 LIMIT 1 [37m$1[0m=bb6497d0-d35f-4f6b-8d55-126b6ba747cd
+[36mINFO[0m[2020-10-09T09:51:11Z] /api/categories/bb6497d0-d35f-4f6b-8d55-126b6ba747cd/ [36mcontent_type[0m=application/json [36mdb[0m=3.005432ms [36mduration[0m=3.923614ms [36mhuman_size[0m="188 B" [36mmethod[0m=GET [36mparams[0m="{\"category_id\":[\"bb6497d0-d35f-4f6b-8d55-126b6ba747cd\"]}" [36mpath[0m=/api/categories/bb6497d0-d35f-4f6b-8d55-126b6ba747cd/ [36mrender[0m="121.163µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-507f8602f54525d9d94a [36msize[0m=188 [36mstatus[0m=200
+[36mINFO[0m[2020-10-09T09:51:11Z] /favicon.ico/ [36mcontent_type[0m=image/avif [36mdb[0m=0s [36mduration[0m=2.023899ms [36mhuman_size[0m="712 B" [36mmethod[0m=GET [36mparams[0m="{\"path\":[\"favicon.ico\"]}" [36mpath[0m=/favicon.ico/ [36mrender[0m=1.018126ms [36mrequest_id[0m=9e0c09079f2fefd1cb81-4a40986ebd75e9507914 [36msize[0m=712 [36mstatus[0m=200
+[37mDEBU[0m[2020-10-09T09:51:11Z] SELECT posts.category_id, posts.created_at, posts.description, posts.id, posts.short_desc, posts.title, posts.updated_at FROM posts AS posts WHERE category_id = $1 LIMIT 20 OFFSET 0 [37m$1[0m=bb6497d0-d35f-4f6b-8d55-126b6ba747cd
+[37mDEBU[0m[2020-10-09T09:51:11Z] SELECT COUNT(*) AS row_count FROM (SELECT posts.category_id, posts.created_at, posts.description, posts.id, posts.short_desc, posts.title, posts.updated_at FROM posts AS posts WHERE category_id = $1) a [37m$1[0m=bb6497d0-d35f-4f6b-8d55-126b6ba747cd
+[36mINFO[0m[2020-10-09T09:51:11Z] /api/categories/bb6497d0-d35f-4f6b-8d55-126b6ba747cd/posts/ [36mcontent_type[0m=application/json [36mdb[0m=2.279661ms [36mduration[0m=5.380244ms [36mhuman_size[0m="987 B" [36mmethod[0m=GET [36mparams[0m="{\"category_id\":[\"bb6497d0-d35f-4f6b-8d55-126b6ba747cd\"]}" [36mpath[0m=/api/categories/bb6497d0-d35f-4f6b-8d55-126b6ba747cd/posts/ [36mrender[0m="122.635µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-7c6318d0ab5de61e52df [36msize[0m=987 [36mstatus[0m=200
+[37mDEBU[0m[2020-10-09T09:51:12Z] SELECT categories.created_at, categories.description, categories.id, categories.title, categories.updated_at FROM categories AS categories LIMIT 20 OFFSET 0
+[36mINFO[0m[2020-10-09T09:51:12Z] /favicon.ico/ [36mcontent_type[0m=image/avif [36mdb[0m=0s [36mduration[0m=4.22863ms [36mhuman_size[0m="712 B" [36mmethod[0m=GET [36mparams[0m="{\"path\":[\"favicon.ico\"]}" [36mpath[0m=/favicon.ico/ [36mrender[0m="730.224µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-6735a41c44e16f4c1c4c [36msize[0m=712 [36mstatus[0m=200
+[37mDEBU[0m[2020-10-09T09:51:12Z] SELECT COUNT(*) AS row_count FROM (SELECT categories.created_at, categories.description, categories.id, categories.title, categories.updated_at FROM categories AS categories) a
+[36mINFO[0m[2020-10-09T09:51:12Z] /api/categories/ [36mcontent_type[0m=application/json [36mdb[0m=5.076418ms [36mduration[0m=5.814974ms [36mhuman_size[0m="370 B" [36mmethod[0m=GET [36mparams[0m="{}" [36mpath[0m=/api/categories/ [36mrender[0m="72.435µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-4092a9406cc80b301027 [36msize[0m=370 [36mstatus[0m=200
+[37mDEBU[0m[2020-10-09T09:51:13Z] SELECT posts.category_id, posts.created_at, posts.description, posts.id, posts.short_desc, posts.title, posts.updated_at FROM posts AS posts WHERE category_id = $1 LIMIT 20 OFFSET 0 [37m$1[0m=5c897555-e132-488f-8963-e8efb2f327cd
+[36mINFO[0m[2020-10-09T09:51:13Z] /favicon.ico/ [36mcontent_type[0m=image/avif [36mdb[0m=0s [36mduration[0m=4.702037ms [36mhuman_size[0m="712 B" [36mmethod[0m=GET [36mparams[0m="{\"path\":[\"favicon.ico\"]}" [36mpath[0m=/favicon.ico/ [36mrender[0m="808.724µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-439ae00b37cc3c0cd0f9 [36msize[0m=712 [36mstatus[0m=200
+[37mDEBU[0m[2020-10-09T09:51:13Z] SELECT COUNT(*) AS row_count FROM (SELECT posts.category_id, posts.created_at, posts.description, posts.id, posts.short_desc, posts.title, posts.updated_at FROM posts AS posts WHERE category_id = $1) a [37m$1[0m=5c897555-e132-488f-8963-e8efb2f327cd
+[36mINFO[0m[2020-10-09T09:51:13Z] /api/categories/5c897555-e132-488f-8963-e8efb2f327cd/posts/ [36mcontent_type[0m=application/json [36mdb[0m=5.239279ms [36mduration[0m=7.398535ms [36mhuman_size[0m="1.0 kB" [36mmethod[0m=GET [36mparams[0m="{\"category_id\":[\"5c897555-e132-488f-8963-e8efb2f327cd\"]}" [36mpath[0m=/api/categories/5c897555-e132-488f-8963-e8efb2f327cd/posts/ [36mrender[0m="101.264µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-68af4001ecf708d4ce3e [36msize[0m=1012 [36mstatus[0m=200
+[37mDEBU[0m[2020-10-09T09:51:13Z] SELECT categories.created_at, categories.description, categories.id, categories.title, categories.updated_at FROM categories AS categories WHERE categories.id = $1 LIMIT 1 [37m$1[0m=5c897555-e132-488f-8963-e8efb2f327cd
+[36mINFO[0m[2020-10-09T09:51:13Z] /api/categories/5c897555-e132-488f-8963-e8efb2f327cd/ [36mcontent_type[0m=application/json [36mdb[0m=1.435404ms [36mduration[0m=11.22998ms [36mhuman_size[0m="180 B" [36mmethod[0m=GET [36mparams[0m="{\"category_id\":[\"5c897555-e132-488f-8963-e8efb2f327cd\"]}" [36mpath[0m=/api/categories/5c897555-e132-488f-8963-e8efb2f327cd/ [36mrender[0m="90.518µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-99e5fd203f1b8374dae4 [36msize[0m=180 [36mstatus[0m=200
+Old chunk file has been removed:  /root/go/src/github.com/hoai/vuerecipe/public/assets/application.ee8a6cf2709b17d33993.css
+Old chunk file has been removed:  /root/go/src/github.com/hoai/vuerecipe/public/assets/application.8c7705f460a38cdfe751.js
+Hash: 2fe7747ef65f9958b87b
+Version: webpack 4.5.0
+Time: 443ms
+Built at: 10/9/2020 9:52:51 AM
+                               Asset       Size       Chunks             Chunk Names
+application.91f047106d2b301d2551.css   1.15 MiB  application  [emitted]  application
+ application.2fe7747ef65f9958b87b.js    888 KiB  application  [emitted]  application
+                     images/logo.svg   64.4 KiB               [emitted]  
+                       manifest.json  224 bytes               [emitted]  
+ + 1 hidden asset
+Entrypoint application = application.91f047106d2b301d2551.css application.2fe7747ef65f9958b87b.js
+   40 modules
+[31mERRO[0m[2020-10-09T09:52:51Z] could not find /application.ee8a6cf2709b17d33993.css
+[36mINFO[0m[2020-10-09T09:52:52Z] /category/5c897555-e132-488f-8963-e8efb2f327cd/ [36mcontent_type[0m=text/html [36mdb[0m=0s [36mduration[0m=14.576738ms [36mhuman_size[0m="712 B" [36mmethod[0m=GET [36mparams[0m="{\"path\":[\"category/5c897555-e132-488f-8963-e8efb2f327cd\"]}" [36mpath[0m=/category/5c897555-e132-488f-8963-e8efb2f327cd/ [36mrender[0m="879.337µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-94ec0b160a27cd97fd86 [36msize[0m=712 [36mstatus[0m=200
+[37mDEBU[0m[2020-10-09T09:52:53Z] SELECT categories.created_at, categories.description, categories.id, categories.title, categories.updated_at FROM categories AS categories WHERE categories.id = $1 LIMIT 1 [37m$1[0m=5c897555-e132-488f-8963-e8efb2f327cd
+[36mINFO[0m[2020-10-09T09:52:53Z] /api/categories/5c897555-e132-488f-8963-e8efb2f327cd/ [36mcontent_type[0m=application/json [36mdb[0m=1.096399ms [36mduration[0m=1.945057ms [36mhuman_size[0m="180 B" [36mmethod[0m=GET [36mparams[0m="{\"category_id\":[\"5c897555-e132-488f-8963-e8efb2f327cd\"]}" [36mpath[0m=/api/categories/5c897555-e132-488f-8963-e8efb2f327cd/ [36mrender[0m="101.143µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-23d1458b7d2d204becfe [36msize[0m=180 [36mstatus[0m=200
+[37mDEBU[0m[2020-10-09T09:52:54Z] SELECT posts.category_id, posts.created_at, posts.description, posts.id, posts.short_desc, posts.title, posts.updated_at FROM posts AS posts WHERE category_id = $1 LIMIT 20 OFFSET 0 [37m$1[0m=5c897555-e132-488f-8963-e8efb2f327cd
+[37mDEBU[0m[2020-10-09T09:52:54Z] SELECT COUNT(*) AS row_count FROM (SELECT posts.category_id, posts.created_at, posts.description, posts.id, posts.short_desc, posts.title, posts.updated_at FROM posts AS posts WHERE category_id = $1) a [37m$1[0m=5c897555-e132-488f-8963-e8efb2f327cd
+[36mINFO[0m[2020-10-09T09:52:54Z] /api/categories/5c897555-e132-488f-8963-e8efb2f327cd/posts/ [36mcontent_type[0m=application/json [36mdb[0m=1.607874ms [36mduration[0m=2.452579ms [36mhuman_size[0m="1.0 kB" [36mmethod[0m=GET [36mparams[0m="{\"category_id\":[\"5c897555-e132-488f-8963-e8efb2f327cd\"]}" [36mpath[0m=/api/categories/5c897555-e132-488f-8963-e8efb2f327cd/posts/ [36mrender[0m="116.806µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-dc46066d0248de7fd6af [36msize[0m=1012 [36mstatus[0m=200
+[36mINFO[0m[2020-10-09T09:52:54Z] /favicon.ico/ [36mcontent_type[0m=image/avif [36mdb[0m=0s [36mduration[0m=1.597559ms [36mhuman_size[0m="712 B" [36mmethod[0m=GET [36mparams[0m="{\"path\":[\"favicon.ico\"]}" [36mpath[0m=/favicon.ico/ [36mrender[0m="753.931µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-b92b9e83652229de21e3 [36msize[0m=712 [36mstatus[0m=200
+Old chunk file has been removed:  /root/go/src/github.com/hoai/vuerecipe/public/assets/application.2fe7747ef65f9958b87b.js
+Hash: 900a41ac943073b5bddc
+Version: webpack 4.5.0
+Time: 84ms
+Built at: 10/9/2020 9:53:09 AM
+                              Asset       Size       Chunks             Chunk Names
+application.900a41ac943073b5bddc.js    880 KiB  application  [emitted]  application
+                    images/logo.svg   64.4 KiB               [emitted]  
+                      manifest.json  224 bytes               [emitted]  
+ + 2 hidden assets
+Entrypoint application = application.91f047106d2b301d2551.css application.900a41ac943073b5bddc.js
+   36 modules
+[36mINFO[0m[2020-10-09T09:53:09Z] /category/5c897555-e132-488f-8963-e8efb2f327cd/ [36mcontent_type[0m=text/html [36mdb[0m=0s [36mduration[0m=1.451378ms [36mhuman_size[0m="712 B" [36mmethod[0m=GET [36mparams[0m="{\"path\":[\"category/5c897555-e132-488f-8963-e8efb2f327cd\"]}" [36mpath[0m=/category/5c897555-e132-488f-8963-e8efb2f327cd/ [36mrender[0m="762.889µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-10f7c6420de37acfea1b [36msize[0m=712 [36mstatus[0m=200
+Old chunk file has been removed:  /root/go/src/github.com/hoai/vuerecipe/public/assets/application.900a41ac943073b5bddc.js
+Hash: 0d71a93fe75f310eb56e
+Version: webpack 4.5.0
+Time: 205ms
+Built at: 10/9/2020 9:53:09 AM
+                              Asset       Size       Chunks             Chunk Names
+application.0d71a93fe75f310eb56e.js    888 KiB  application  [emitted]  application
+                    images/logo.svg   64.4 KiB               [emitted]  
+                      manifest.json  224 bytes               [emitted]  
+ + 2 hidden assets
+Entrypoint application = application.91f047106d2b301d2551.css application.0d71a93fe75f310eb56e.js
+   40 modules
+[31mERRO[0m[2020-10-09T09:53:09Z] could not find /application.900a41ac943073b5bddc.js
+[36mINFO[0m[2020-10-09T09:53:10Z] /favicon.ico/ [36mcontent_type[0m=image/avif [36mdb[0m=0s [36mduration[0m=1.955572ms [36mhuman_size[0m="712 B" [36mmethod[0m=GET [36mparams[0m="{\"path\":[\"favicon.ico\"]}" [36mpath[0m=/favicon.ico/ [36mrender[0m=1.141405ms [36mrequest_id[0m=9e0c09079f2fefd1cb81-c34b1fbd5b889105ed3e [36msize[0m=712 [36mstatus[0m=200
+[36mINFO[0m[2020-10-09T09:53:46Z] / [36mcontent_type[0m=text/html [36mdb[0m=0s [36mduration[0m=1.542739ms [36mhuman_size[0m="712 B" [36mmethod[0m=GET [36mparams[0m="{}" [36mpath[0m=/ [36mrender[0m="861.448µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-eb7b99f489ecff692fca [36msize[0m=712 [36mstatus[0m=200
+[37mDEBU[0m[2020-10-09T09:53:48Z] SELECT categories.created_at, categories.description, categories.id, categories.title, categories.updated_at FROM categories AS categories LIMIT 20 OFFSET 0
+[37mDEBU[0m[2020-10-09T09:53:48Z] SELECT COUNT(*) AS row_count FROM (SELECT categories.created_at, categories.description, categories.id, categories.title, categories.updated_at FROM categories AS categories) a
+[36mINFO[0m[2020-10-09T09:53:48Z] /api/categories/ [36mcontent_type[0m=application/json [36mdb[0m=3.047091ms [36mduration[0m=3.916483ms [36mhuman_size[0m="370 B" [36mmethod[0m=GET [36mparams[0m="{}" [36mpath[0m=/api/categories/ [36mrender[0m="103.391µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-c7e6d08d18b3ce34e09b [36msize[0m=370 [36mstatus[0m=200
+[36mINFO[0m[2020-10-09T09:53:49Z] /favicon.ico/ [36mcontent_type[0m=image/avif [36mdb[0m=0s [36mduration[0m=1.481633ms [36mhuman_size[0m="712 B" [36mmethod[0m=GET [36mparams[0m="{\"path\":[\"favicon.ico\"]}" [36mpath[0m=/favicon.ico/ [36mrender[0m="793.415µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-0229c752e6f97533e271 [36msize[0m=712 [36mstatus[0m=200
+[37mDEBU[0m[2020-10-09T09:53:50Z] SELECT categories.created_at, categories.description, categories.id, categories.title, categories.updated_at FROM categories AS categories WHERE categories.id = $1 LIMIT 1 [37m$1[0m=bb6497d0-d35f-4f6b-8d55-126b6ba747cd
+[37mDEBU[0m[2020-10-09T09:53:50Z] SELECT posts.category_id, posts.created_at, posts.description, posts.id, posts.short_desc, posts.title, posts.updated_at FROM posts AS posts WHERE category_id = $1 LIMIT 20 OFFSET 0 [37m$1[0m=bb6497d0-d35f-4f6b-8d55-126b6ba747cd
+[36mINFO[0m[2020-10-09T09:53:50Z] /api/categories/bb6497d0-d35f-4f6b-8d55-126b6ba747cd/ [36mcontent_type[0m=application/json [36mdb[0m=3.455123ms [36mduration[0m=5.628656ms [36mhuman_size[0m="188 B" [36mmethod[0m=GET [36mparams[0m="{\"category_id\":[\"bb6497d0-d35f-4f6b-8d55-126b6ba747cd\"]}" [36mpath[0m=/api/categories/bb6497d0-d35f-4f6b-8d55-126b6ba747cd/ [36mrender[0m="93.2µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-15e4a88d244ebfe597f1 [36msize[0m=188 [36mstatus[0m=200
+[37mDEBU[0m[2020-10-09T09:53:50Z] SELECT COUNT(*) AS row_count FROM (SELECT posts.category_id, posts.created_at, posts.description, posts.id, posts.short_desc, posts.title, posts.updated_at FROM posts AS posts WHERE category_id = $1) a [37m$1[0m=bb6497d0-d35f-4f6b-8d55-126b6ba747cd
+[36mINFO[0m[2020-10-09T09:53:50Z] /api/categories/bb6497d0-d35f-4f6b-8d55-126b6ba747cd/posts/ [36mcontent_type[0m=application/json [36mdb[0m=2.401562ms [36mduration[0m=3.415245ms [36mhuman_size[0m="987 B" [36mmethod[0m=GET [36mparams[0m="{\"category_id\":[\"bb6497d0-d35f-4f6b-8d55-126b6ba747cd\"]}" [36mpath[0m=/api/categories/bb6497d0-d35f-4f6b-8d55-126b6ba747cd/posts/ [36mrender[0m="84.894µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-6cb5c817fcf366d5e875 [36msize[0m=987 [36mstatus[0m=200
+[36mINFO[0m[2020-10-09T09:53:50Z] /favicon.ico/ [36mcontent_type[0m=image/avif [36mdb[0m=0s [36mduration[0m=1.61694ms [36mhuman_size[0m="712 B" [36mmethod[0m=GET [36mparams[0m="{\"path\":[\"favicon.ico\"]}" [36mpath[0m=/favicon.ico/ [36mrender[0m="864.146µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-2bea1f08d5e22e7a67e8 [36msize[0m=712 [36mstatus[0m=200
+Old chunk file has been removed:  /root/go/src/github.com/hoai/vuerecipe/public/assets/application.0d71a93fe75f310eb56e.js
+Hash: 900a41ac943073b5bddc
+Version: webpack 4.5.0
+Time: 74ms
+Built at: 10/9/2020 9:54:27 AM
+                              Asset       Size       Chunks             Chunk Names
+application.900a41ac943073b5bddc.js    880 KiB  application  [emitted]  application
+                    images/logo.svg   64.4 KiB               [emitted]  
+                      manifest.json  224 bytes               [emitted]  
+ + 2 hidden assets
+Entrypoint application = application.91f047106d2b301d2551.css application.900a41ac943073b5bddc.js
+   36 modules
+[36mINFO[0m[2020-10-09T09:54:27Z] /category/bb6497d0-d35f-4f6b-8d55-126b6ba747cd/ [36mcontent_type[0m=text/html [36mdb[0m=0s [36mduration[0m=13.678722ms [36mhuman_size[0m="712 B" [36mmethod[0m=GET [36mparams[0m="{\"path\":[\"category/bb6497d0-d35f-4f6b-8d55-126b6ba747cd\"]}" [36mpath[0m=/category/bb6497d0-d35f-4f6b-8d55-126b6ba747cd/ [36mrender[0m="916.486µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-5f70542084ba084ea5f1 [36msize[0m=712 [36mstatus[0m=200
+Old chunk file has been removed:  /root/go/src/github.com/hoai/vuerecipe/public/assets/application.900a41ac943073b5bddc.js
+Hash: 65793222a191cb4ccbe7
+Version: webpack 4.5.0
+Time: 272ms
+Built at: 10/9/2020 9:54:27 AM
+                              Asset       Size       Chunks             Chunk Names
+application.65793222a191cb4ccbe7.js    888 KiB  application  [emitted]  application
+                    images/logo.svg   64.4 KiB               [emitted]  
+                      manifest.json  224 bytes               [emitted]  
+ + 2 hidden assets
+Entrypoint application = application.91f047106d2b301d2551.css application.65793222a191cb4ccbe7.js
+   40 modules
+[31mERRO[0m[2020-10-09T09:54:27Z] could not find /application.900a41ac943073b5bddc.js
+[36mINFO[0m[2020-10-09T09:54:28Z] /favicon.ico/ [36mcontent_type[0m=image/avif [36mdb[0m=0s [36mduration[0m=13.688328ms [36mhuman_size[0m="712 B" [36mmethod[0m=GET [36mparams[0m="{\"path\":[\"favicon.ico\"]}" [36mpath[0m=/favicon.ico/ [36mrender[0m="803.924µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-5938eb9a74bc210a0a16 [36msize[0m=712 [36mstatus[0m=200
+[36mINFO[0m[2020-10-09T09:54:32Z] /category/bb6497d0-d35f-4f6b-8d55-126b6ba747cd/ [36mcontent_type[0m=text/html [36mdb[0m=0s [36mduration[0m=12.840535ms [36mhuman_size[0m="712 B" [36mmethod[0m=GET [36mparams[0m="{\"path\":[\"category/bb6497d0-d35f-4f6b-8d55-126b6ba747cd\"]}" [36mpath[0m=/category/bb6497d0-d35f-4f6b-8d55-126b6ba747cd/ [36mrender[0m="828.931µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-b97868e078e7977a934c [36msize[0m=712 [36mstatus[0m=200
+[37mDEBU[0m[2020-10-09T09:54:34Z] SELECT posts.category_id, posts.created_at, posts.description, posts.id, posts.short_desc, posts.title, posts.updated_at FROM posts AS posts WHERE category_id = $1 LIMIT 20 OFFSET 0 [37m$1[0m=bb6497d0-d35f-4f6b-8d55-126b6ba747cd
+[37mDEBU[0m[2020-10-09T09:54:34Z] SELECT categories.created_at, categories.description, categories.id, categories.title, categories.updated_at FROM categories AS categories WHERE categories.id = $1 LIMIT 1 [37m$1[0m=bb6497d0-d35f-4f6b-8d55-126b6ba747cd
+[37mDEBU[0m[2020-10-09T09:54:34Z] SELECT COUNT(*) AS row_count FROM (SELECT posts.category_id, posts.created_at, posts.description, posts.id, posts.short_desc, posts.title, posts.updated_at FROM posts AS posts WHERE category_id = $1) a [37m$1[0m=bb6497d0-d35f-4f6b-8d55-126b6ba747cd
+[36mINFO[0m[2020-10-09T09:54:34Z] /api/categories/bb6497d0-d35f-4f6b-8d55-126b6ba747cd/ [36mcontent_type[0m=application/json [36mdb[0m="975.808µs" [36mduration[0m=3.647188ms [36mhuman_size[0m="188 B" [36mmethod[0m=GET [36mparams[0m="{\"category_id\":[\"bb6497d0-d35f-4f6b-8d55-126b6ba747cd\"]}" [36mpath[0m=/api/categories/bb6497d0-d35f-4f6b-8d55-126b6ba747cd/ [36mrender[0m="103.77µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-5e740dfbf19d6852f8e1 [36msize[0m=188 [36mstatus[0m=200
+[36mINFO[0m[2020-10-09T09:54:34Z] /api/categories/bb6497d0-d35f-4f6b-8d55-126b6ba747cd/posts/ [36mcontent_type[0m=application/json [36mdb[0m=3.956676ms [36mduration[0m=13.448842ms [36mhuman_size[0m="987 B" [36mmethod[0m=GET [36mparams[0m="{\"category_id\":[\"bb6497d0-d35f-4f6b-8d55-126b6ba747cd\"]}" [36mpath[0m=/api/categories/bb6497d0-d35f-4f6b-8d55-126b6ba747cd/posts/ [36mrender[0m="89.728µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-cda61361ccec3540b7fb [36msize[0m=987 [36mstatus[0m=200
+[36mINFO[0m[2020-10-09T09:54:35Z] /favicon.ico/ [36mcontent_type[0m=image/avif [36mdb[0m=0s [36mduration[0m=13.865994ms [36mhuman_size[0m="712 B" [36mmethod[0m=GET [36mparams[0m="{\"path\":[\"favicon.ico\"]}" [36mpath[0m=/favicon.ico/ [36mrender[0m="791.334µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-07bc89c01b186722590b [36msize[0m=712 [36mstatus[0m=200
+Old chunk file has been removed:  /root/go/src/github.com/hoai/vuerecipe/public/assets/application.65793222a191cb4ccbe7.js
+Hash: 900a41ac943073b5bddc
+Version: webpack 4.5.0
+Time: 95ms
+Built at: 10/9/2020 9:54:47 AM
+                              Asset       Size       Chunks             Chunk Names
+application.900a41ac943073b5bddc.js    880 KiB  application  [emitted]  application
+                    images/logo.svg   64.4 KiB               [emitted]  
+                      manifest.json  224 bytes               [emitted]  
+ + 2 hidden assets
+Entrypoint application = application.91f047106d2b301d2551.css application.900a41ac943073b5bddc.js
+   36 modules
+[36mINFO[0m[2020-10-09T09:54:47Z] /category/bb6497d0-d35f-4f6b-8d55-126b6ba747cd/ [36mcontent_type[0m=text/html [36mdb[0m=0s [36mduration[0m=15.484236ms [36mhuman_size[0m="712 B" [36mmethod[0m=GET [36mparams[0m="{\"path\":[\"category/bb6497d0-d35f-4f6b-8d55-126b6ba747cd\"]}" [36mpath[0m=/category/bb6497d0-d35f-4f6b-8d55-126b6ba747cd/ [36mrender[0m="849.773µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-6f6bb29d2b1078d0743c [36msize[0m=712 [36mstatus[0m=200
+Old chunk file has been removed:  /root/go/src/github.com/hoai/vuerecipe/public/assets/application.900a41ac943073b5bddc.js
+Hash: 43b693d179f0c7a51a49
+Version: webpack 4.5.0
+Time: 253ms
+Built at: 10/9/2020 9:54:47 AM
+                              Asset       Size       Chunks             Chunk Names
+application.43b693d179f0c7a51a49.js    888 KiB  application  [emitted]  application
+                    images/logo.svg   64.4 KiB               [emitted]  
+                      manifest.json  224 bytes               [emitted]  
+ + 2 hidden assets
+Entrypoint application = application.91f047106d2b301d2551.css application.43b693d179f0c7a51a49.js
+   40 modules
+[31mERRO[0m[2020-10-09T09:54:47Z] could not find /application.900a41ac943073b5bddc.js
+[36mINFO[0m[2020-10-09T09:54:48Z] /favicon.ico/ [36mcontent_type[0m=image/avif [36mdb[0m=0s [36mduration[0m=13.222466ms [36mhuman_size[0m="712 B" [36mmethod[0m=GET [36mparams[0m="{\"path\":[\"favicon.ico\"]}" [36mpath[0m=/favicon.ico/ [36mrender[0m="911.828µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-4dc98268ce414e3e645a [36msize[0m=712 [36mstatus[0m=200
+Old chunk file has been removed:  /root/go/src/github.com/hoai/vuerecipe/public/assets/application.43b693d179f0c7a51a49.js
+Hash: 900a41ac943073b5bddc
+Version: webpack 4.5.0
+Time: 81ms
+Built at: 10/9/2020 9:54:57 AM
+                              Asset       Size       Chunks             Chunk Names
+application.900a41ac943073b5bddc.js    880 KiB  application  [emitted]  application
+                    images/logo.svg   64.4 KiB               [emitted]  
+                      manifest.json  224 bytes               [emitted]  
+ + 2 hidden assets
+Entrypoint application = application.91f047106d2b301d2551.css application.900a41ac943073b5bddc.js
+   36 modules
+Old chunk file has been removed:  /root/go/src/github.com/hoai/vuerecipe/public/assets/application.900a41ac943073b5bddc.js
+Hash: 65a7ba10d5ea6e93711c
+Version: webpack 4.5.0
+Time: 225ms
+Built at: 10/9/2020 9:54:57 AM
+                              Asset       Size       Chunks             Chunk Names
+application.65a7ba10d5ea6e93711c.js    888 KiB  application  [emitted]  application
+                    images/logo.svg   64.4 KiB               [emitted]  
+                      manifest.json  224 bytes               [emitted]  
+ + 2 hidden assets
+Entrypoint application = application.91f047106d2b301d2551.css application.65a7ba10d5ea6e93711c.js
+   40 modules
+Old chunk file has been removed:  /root/go/src/github.com/hoai/vuerecipe/public/assets/application.65a7ba10d5ea6e93711c.js
+Hash: 900a41ac943073b5bddc
+Version: webpack 4.5.0
+Time: 64ms
+Built at: 10/9/2020 9:55:02 AM
+                              Asset       Size       Chunks             Chunk Names
+application.900a41ac943073b5bddc.js    880 KiB  application  [emitted]  application
+                    images/logo.svg   64.4 KiB               [emitted]  
+                      manifest.json  224 bytes               [emitted]  
+ + 2 hidden assets
+Entrypoint application = application.91f047106d2b301d2551.css application.900a41ac943073b5bddc.js
+   36 modules
+Old chunk file has been removed:  /root/go/src/github.com/hoai/vuerecipe/public/assets/application.900a41ac943073b5bddc.js
+Hash: 02eeb1d9f6f24ae523af
+Version: webpack 4.5.0
+Time: 153ms
+Built at: 10/9/2020 9:55:03 AM
+                              Asset       Size       Chunks             Chunk Names
+application.02eeb1d9f6f24ae523af.js    888 KiB  application  [emitted]  application
+                    images/logo.svg   64.4 KiB               [emitted]  
+                      manifest.json  224 bytes               [emitted]  
+ + 2 hidden assets
+Entrypoint application = application.91f047106d2b301d2551.css application.02eeb1d9f6f24ae523af.js
+   40 modules
+[36mINFO[0m[2020-10-09T09:55:06Z] /category/bb6497d0-d35f-4f6b-8d55-126b6ba747cd/ [36mcontent_type[0m=text/html [36mdb[0m=0s [36mduration[0m=13.931047ms [36mhuman_size[0m="712 B" [36mmethod[0m=GET [36mparams[0m="{\"path\":[\"category/bb6497d0-d35f-4f6b-8d55-126b6ba747cd\"]}" [36mpath[0m=/category/bb6497d0-d35f-4f6b-8d55-126b6ba747cd/ [36mrender[0m="896.806µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-103aa60e5fd941d2c475 [36msize[0m=712 [36mstatus[0m=200
+[37mDEBU[0m[2020-10-09T09:55:08Z] SELECT categories.created_at, categories.description, categories.id, categories.title, categories.updated_at FROM categories AS categories WHERE categories.id = $1 LIMIT 1 [37m$1[0m=bb6497d0-d35f-4f6b-8d55-126b6ba747cd
+[37mDEBU[0m[2020-10-09T09:55:08Z] SELECT posts.category_id, posts.created_at, posts.description, posts.id, posts.short_desc, posts.title, posts.updated_at FROM posts AS posts WHERE category_id = $1 LIMIT 20 OFFSET 0 [37m$1[0m=bb6497d0-d35f-4f6b-8d55-126b6ba747cd
+[36mINFO[0m[2020-10-09T09:55:08Z] /api/categories/bb6497d0-d35f-4f6b-8d55-126b6ba747cd/ [36mcontent_type[0m=application/json [36mdb[0m=11.415413ms [36mduration[0m=22.02758ms [36mhuman_size[0m="188 B" [36mmethod[0m=GET [36mparams[0m="{\"category_id\":[\"bb6497d0-d35f-4f6b-8d55-126b6ba747cd\"]}" [36mpath[0m=/api/categories/bb6497d0-d35f-4f6b-8d55-126b6ba747cd/ [36mrender[0m="140.073µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-73dc23a3208db82a1c07 [36msize[0m=188 [36mstatus[0m=200
+[37mDEBU[0m[2020-10-09T09:55:08Z] SELECT COUNT(*) AS row_count FROM (SELECT posts.category_id, posts.created_at, posts.description, posts.id, posts.short_desc, posts.title, posts.updated_at FROM posts AS posts WHERE category_id = $1) a [37m$1[0m=bb6497d0-d35f-4f6b-8d55-126b6ba747cd
+[36mINFO[0m[2020-10-09T09:55:08Z] /api/categories/bb6497d0-d35f-4f6b-8d55-126b6ba747cd/posts/ [36mcontent_type[0m=application/json [36mdb[0m=54.873207ms [36mduration[0m=69.696223ms [36mhuman_size[0m="987 B" [36mmethod[0m=GET [36mparams[0m="{\"category_id\":[\"bb6497d0-d35f-4f6b-8d55-126b6ba747cd\"]}" [36mpath[0m=/api/categories/bb6497d0-d35f-4f6b-8d55-126b6ba747cd/posts/ [36mrender[0m="148.496µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-93100c4e043c23e2ec9c [36msize[0m=987 [36mstatus[0m=200
+[36mINFO[0m[2020-10-09T09:55:08Z] /favicon.ico/ [36mcontent_type[0m=image/avif [36mdb[0m=0s [36mduration[0m=12.520285ms [36mhuman_size[0m="712 B" [36mmethod[0m=GET [36mparams[0m="{\"path\":[\"favicon.ico\"]}" [36mpath[0m=/favicon.ico/ [36mrender[0m="856.647µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-734a7008a44fd77f16ce [36msize[0m=712 [36mstatus[0m=200
+[37mDEBU[0m[2020-10-09T09:55:16Z] SELECT categories.created_at, categories.description, categories.id, categories.title, categories.updated_at FROM categories AS categories LIMIT 20 OFFSET 0
+[37mDEBU[0m[2020-10-09T09:55:16Z] SELECT COUNT(*) AS row_count FROM (SELECT categories.created_at, categories.description, categories.id, categories.title, categories.updated_at FROM categories AS categories) a
+[36mINFO[0m[2020-10-09T09:55:16Z] /api/categories/ [36mcontent_type[0m=application/json [36mdb[0m=12.482291ms [36mduration[0m=31.397913ms [36mhuman_size[0m="370 B" [36mmethod[0m=GET [36mparams[0m="{}" [36mpath[0m=/api/categories/ [36mrender[0m="136.208µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-49e1fe1d9cad45d320aa [36msize[0m=370 [36mstatus[0m=200
+[36mINFO[0m[2020-10-09T09:55:16Z] /favicon.ico/ [36mcontent_type[0m=image/avif [36mdb[0m=0s [36mduration[0m=15.407967ms [36mhuman_size[0m="712 B" [36mmethod[0m=GET [36mparams[0m="{\"path\":[\"favicon.ico\"]}" [36mpath[0m=/favicon.ico/ [36mrender[0m="819.678µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-0b72a09d3a7ac1bb894f [36msize[0m=712 [36mstatus[0m=200
+[37mDEBU[0m[2020-10-09T09:55:17Z] SELECT categories.created_at, categories.description, categories.id, categories.title, categories.updated_at FROM categories AS categories WHERE categories.id = $1 LIMIT 1 [37m$1[0m=5c897555-e132-488f-8963-e8efb2f327cd
+[37mDEBU[0m[2020-10-09T09:55:17Z] SELECT posts.category_id, posts.created_at, posts.description, posts.id, posts.short_desc, posts.title, posts.updated_at FROM posts AS posts WHERE category_id = $1 LIMIT 20 OFFSET 0 [37m$1[0m=5c897555-e132-488f-8963-e8efb2f327cd
+[37mDEBU[0m[2020-10-09T09:55:17Z] SELECT COUNT(*) AS row_count FROM (SELECT posts.category_id, posts.created_at, posts.description, posts.id, posts.short_desc, posts.title, posts.updated_at FROM posts AS posts WHERE category_id = $1) a [37m$1[0m=5c897555-e132-488f-8963-e8efb2f327cd
+[36mINFO[0m[2020-10-09T09:55:17Z] /api/categories/5c897555-e132-488f-8963-e8efb2f327cd/ [36mcontent_type[0m=application/json [36mdb[0m=10.412852ms [36mduration[0m=26.708431ms [36mhuman_size[0m="180 B" [36mmethod[0m=GET [36mparams[0m="{\"category_id\":[\"5c897555-e132-488f-8963-e8efb2f327cd\"]}" [36mpath[0m=/api/categories/5c897555-e132-488f-8963-e8efb2f327cd/ [36mrender[0m="130.116µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-c60956b5d18ec72a3c28 [36msize[0m=180 [36mstatus[0m=200
+[36mINFO[0m[2020-10-09T09:55:17Z] /api/categories/5c897555-e132-488f-8963-e8efb2f327cd/posts/ [36mcontent_type[0m=application/json [36mdb[0m=25.59998ms [36mduration[0m=41.170271ms [36mhuman_size[0m="1.0 kB" [36mmethod[0m=GET [36mparams[0m="{\"category_id\":[\"5c897555-e132-488f-8963-e8efb2f327cd\"]}" [36mpath[0m=/api/categories/5c897555-e132-488f-8963-e8efb2f327cd/posts/ [36mrender[0m="141.649µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-050dd1d84ecb874e92d5 [36msize[0m=1012 [36mstatus[0m=200
+[36mINFO[0m[2020-10-09T09:55:17Z] /favicon.ico/ [36mcontent_type[0m=image/avif [36mdb[0m=0s [36mduration[0m=14.2872ms [36mhuman_size[0m="712 B" [36mmethod[0m=GET [36mparams[0m="{\"path\":[\"favicon.ico\"]}" [36mpath[0m=/favicon.ico/ [36mrender[0m="883.256µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-b555e60a5919857ba021 [36msize[0m=712 [36mstatus[0m=200
+[37mDEBU[0m[2020-10-09T09:55:24Z] SELECT categories.created_at, categories.description, categories.id, categories.title, categories.updated_at FROM categories AS categories LIMIT 20 OFFSET 0
+[37mDEBU[0m[2020-10-09T09:55:24Z] SELECT COUNT(*) AS row_count FROM (SELECT categories.created_at, categories.description, categories.id, categories.title, categories.updated_at FROM categories AS categories) a
+[36mINFO[0m[2020-10-09T09:55:24Z] /api/categories/ [36mcontent_type[0m=application/json [36mdb[0m=16.328573ms [36mduration[0m=23.740515ms [36mhuman_size[0m="370 B" [36mmethod[0m=GET [36mparams[0m="{}" [36mpath[0m=/api/categories/ [36mrender[0m="94.535µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-c6a013f87013d42aa727 [36msize[0m=370 [36mstatus[0m=200
+[36mINFO[0m[2020-10-09T09:55:24Z] /favicon.ico/ [36mcontent_type[0m=image/avif [36mdb[0m=0s [36mduration[0m=15.335236ms [36mhuman_size[0m="712 B" [36mmethod[0m=GET [36mparams[0m="{\"path\":[\"favicon.ico\"]}" [36mpath[0m=/favicon.ico/ [36mrender[0m="869.236µs" [36mrequest_id[0m=9e0c09079f2fefd1cb81-f531cfc79ed28a5c4204 [36msize[0m=712 [36mstatus[0m=200
