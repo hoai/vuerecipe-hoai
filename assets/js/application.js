@@ -8,9 +8,15 @@ Vue.use(VueRouter);
 import BandComponent from "./components/band.vue";
 import MembersComponent from "./components/members.vue";
 
+import CategroyComponent from "./components/category.vue";
+import PostComponent from "./components/post.vue";
+
 const routes = [
   {path: "/band/:id", component: MembersComponent, name: "showBand"},
-  {path: "/", component: BandComponent}
+  {path: "/category/:id", component: PostComponent, name: "showCategory"},
+  {path: "/bands", component: BandComponent},
+  {path: "/categories", component: CategroyComponent},
+  {path: "/", component: CategroyComponent}
 ];
 
 const router = new VueRouter({
