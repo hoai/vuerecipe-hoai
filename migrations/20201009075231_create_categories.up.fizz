@@ -1,0 +1,7 @@
+create_table("categories") {
+	t.Column("id", "uuid", {primary: true})
+	t.Column("title", "string", {})
+	t.Column("description", "text", {null: true})
+	t.Column("category_id", "uuid", {})
+	t.Timestamps()
+}

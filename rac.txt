@@ -1,0 +1,1 @@
+buffalo generate resource category title description:nulls.Text category_id:uuid --skip-templates
