@@ -2,7 +2,7 @@ development:
   dialect: postgres
   database: demo_development
   user: postgres
-  password: postgres
+  password: 5J%R@W@(%h!N&c]
   host: 127.0.0.1
   pool: 5
 
